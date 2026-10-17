@@ -12,7 +12,7 @@
     background:
         linear-gradient(145deg, rgb(5 20 40 / 88%), rgb(3 10 24 / 96%)),
         url('../../assets/green-abstract-gradient-background.jpg') center / cover no-repeat;
-    color: #e0f2fe;
+    color: #f7f7f5;
 
     &__top-grid,
     &__settings {
@@ -221,7 +221,7 @@
         &--live {
             span {
                 background: linear-gradient(145deg, #67e8f9, #1689bd);
-                border-color: #e0f2fe;
+                border-color: #f7f7f5;
                 box-shadow: 0 0 0 3px rgb(103 232 249 / 35%), 0 0 1.4rem rgb(34 211 238 / 70%);
                 color: #031b2d;
                 transform: scale(1.08);

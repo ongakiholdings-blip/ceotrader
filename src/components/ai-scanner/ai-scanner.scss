@@ -1,8 +1,8 @@
 // ─── Blue/Cyan palette (normal-bot theme) ──────────────────────────────────────
-// $cyan-bright : #38bdf8   sky-400
-// $cyan-base   : #06b6d4   cyan-500
-// $blue-base   : #3b82f6   blue-500
-// $blue-deep   : #0369a1   blue-700
+// $cyan-bright : #eed58d   sky-400
+// $cyan-base   : #d6a72c   cyan-500
+// $blue-base   : #d6a72c   blue-500
+// $blue-deep   : #8f6a18   blue-700
 // $navy-dark   : #001428
 // $navy-darker : #000d1f
 
@@ -13,11 +13,11 @@
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
-    border: 1.5px solid rgb(6 182 212 / 55%);
+    border: 1.5px solid rgb(214 167 44 / 55%);
     background: linear-gradient(135deg, #20d4d4 0%, #d6b35a 100%);
     box-shadow:
         0 4px 14px rgb(0 0 0 / 30%),
-        0 0 18px rgb(6 182 212 / 35%);
+        0 0 18px rgb(214 167 44 / 35%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,7 +35,7 @@
         position: absolute;
         inset: 0;
         border-radius: 50%;
-        background: linear-gradient(105deg, transparent 35%, rgb(224 242 254 / 22%) 50%, transparent 65%);
+        background: linear-gradient(105deg, transparent 35%, rgb(201 209 223 / 22%) 50%, transparent 65%);
         background-size: 220% 100%;
         animation: ai-cyan-shimmer 2.8s ease-in-out infinite;
         z-index: 0;
@@ -65,7 +65,7 @@
         pointer-events: none;
         user-select: none;
         color: #0f172a;
-        text-shadow: 0 0 8px rgb(6 182 212 / 70%);
+        text-shadow: 0 0 8px rgb(214 167 44 / 70%);
         animation: ai-text-glow 2.2s ease-in-out infinite alternate;
     }
 
@@ -75,8 +75,8 @@
         border-color: rgb(56 189 248 / 90%);
         box-shadow:
             0 8px 28px rgb(0 0 0 / 45%),
-            0 0 30px rgb(6 182 212 / 65%),
-            0 0 54px rgb(59 130 246 / 30%);
+            0 0 30px rgb(214 167 44 / 65%),
+            0 0 54px rgb(214 167 44 / 30%);
         animation-play-state: paused;
     }
 
@@ -84,8 +84,8 @@
         border-color: rgb(56 189 248 / 90%);
         box-shadow:
             0 8px 28px rgb(0 0 0 / 45%),
-            0 0 30px rgb(6 182 212 / 65%),
-            0 0 54px rgb(59 130 246 / 30%);
+            0 0 30px rgb(214 167 44 / 65%),
+            0 0 54px rgb(214 167 44 / 30%);
     }
 
     &__dot {
@@ -132,13 +132,13 @@
     0%, 100% {
         box-shadow:
             0 4px 14px rgb(0 0 0 / 30%),
-            0 0 18px rgb(6 182 212 / 35%);
+            0 0 18px rgb(214 167 44 / 35%);
     }
     50% {
         box-shadow:
             0 4px 14px rgb(0 0 0 / 30%),
-            0 0 32px rgb(6 182 212 / 70%),
-            0 0 54px rgb(59 130 246 / 30%);
+            0 0 32px rgb(214 167 44 / 70%),
+            0 0 54px rgb(214 167 44 / 30%);
     }
 }
 
@@ -255,7 +255,7 @@
             font-weight: 800;
             margin: 0;
             letter-spacing: 0.01em;
-            background: linear-gradient(180deg, #e0f2fe 0%, #38bdf8 55%, #0369a1 100%);
+            background: linear-gradient(180deg, #f7f7f5 0%, #eed58d 55%, #8f6a18 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -280,13 +280,13 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        color: #06b6d4;
+        color: #d6a72c;
         font-size: 1.2rem;
         transition: background 0.15s, color 0.15s, border-color 0.15s;
 
         &:hover {
             background: rgba(6, 182, 212, 0.2);
-            color: #38bdf8;
+            color: #eed58d;
             border-color: rgba(6, 182, 212, 0.65);
         }
     }
@@ -323,20 +323,20 @@
 
         &:hover:not(:disabled) {
             background: rgba(6, 182, 212, 0.08);
-            color: #06b6d4;
+            color: #d6a72c;
             border-color: rgba(6, 182, 212, 0.5);
         }
 
         &:disabled { opacity: 0.4; cursor: not-allowed; }
 
         &--active {
-            background: linear-gradient(135deg, #0369a1 0%, #0284c7 50%, #06b6d4 100%);
+            background: linear-gradient(135deg, #8f6a18 0%, #0284c7 50%, #d6a72c 100%);
             border-color: transparent;
-            color: #e0f2fe;
+            color: #f7f7f5;
             box-shadow: 0 2px 10px rgba(6, 182, 212, 0.35);
 
             &:hover:not(:disabled) {
-                background: linear-gradient(135deg, #025f94 0%, #0369a1 50%, #0284c7 100%);
+                background: linear-gradient(135deg, #025f94 0%, #8f6a18 50%, #0284c7 100%);
                 color: #f0f9ff;
             }
         }
@@ -465,19 +465,19 @@
 
         &:hover {
             border-color: rgba(6, 182, 212, 0.6);
-            color: #06b6d4;
+            color: #d6a72c;
             background: rgba(6, 182, 212, 0.08);
         }
 
         &--active {
-            background: linear-gradient(135deg, #0369a1 0%, #0284c7 50%, #06b6d4 100%);
+            background: linear-gradient(135deg, #8f6a18 0%, #0284c7 50%, #d6a72c 100%);
             border-color: transparent;
-            color: #e0f2fe;
+            color: #f7f7f5;
             font-weight: 800;
             box-shadow: 0 2px 10px rgba(6, 182, 212, 0.45);
 
             &:hover {
-                background: linear-gradient(135deg, #025f94 0%, #0369a1 50%, #0284c7 100%);
+                background: linear-gradient(135deg, #025f94 0%, #8f6a18 50%, #0284c7 100%);
                 color: #f0f9ff;
             }
         }
@@ -514,7 +514,7 @@
         h4 {
             font-size: 1.35rem;
             font-weight: 700;
-            background: linear-gradient(135deg, #e0f2fe, #06b6d4);
+            background: linear-gradient(135deg, #f7f7f5, #d6a72c);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -553,7 +553,7 @@
             border: 1.5px solid rgba(6, 182, 212, 0.28);
             border-radius: 0.6rem;
             background: rgba(6, 182, 212, 0.06);
-            color: #38bdf8;
+            color: #eed58d;
             outline: none;
             transition: border-color 0.15s, box-shadow 0.15s;
 
@@ -576,7 +576,7 @@
         font-weight: 800;
         letter-spacing: 0.12em;
         text-transform: uppercase;
-        color: #06b6d4;
+        color: #d6a72c;
         margin-bottom: 0.6rem;
         margin-top: 0.2rem;
         padding-bottom: 0.4rem;
@@ -614,7 +614,7 @@
             border: 1.5px solid rgba(6, 182, 212, 0.22);
             border-radius: 0.6rem;
             background: rgba(6, 182, 212, 0.05);
-            color: #38bdf8;
+            color: #eed58d;
             outline: none;
             box-sizing: border-box;
             transition: border-color 0.15s, box-shadow 0.15s;
@@ -667,7 +667,7 @@
             text-overflow: ellipsis;
 
             &.ai-scanner-modal__field-value--ai {
-                color: #38bdf8;
+                color: #eed58d;
                 border-color: rgba(6, 182, 212, 0.5);
                 background: rgba(6, 182, 212, 0.1);
                 font-weight: 800;
@@ -688,7 +688,7 @@
 
         &-bar {
             height: 100%;
-            background: linear-gradient(90deg, #0369a1, #0284c7, #06b6d4, #38bdf8);
+            background: linear-gradient(90deg, #8f6a18, #0284c7, #d6a72c, #eed58d);
             background-size: 200% 100%;
             border-radius: 0.35rem;
             transition: width 0.3s ease;
@@ -716,7 +716,7 @@
         align-items: center;
         gap: 0.6rem;
 
-        &--scanning { color: #06b6d4; }
+        &--scanning { color: #d6a72c; }
         &--done     { color: #6ee7b7; }
         &--error    { color: #f87171; }
     }
@@ -752,7 +752,7 @@
         &:hover { background: rgba(6, 182, 212, 0.07); }
 
         &--best .ai-scanner-modal__result-pct {
-            color: #38bdf8;
+            color: #eed58d;
             font-weight: 700;
             text-shadow: 0 0 8px rgba(6, 182, 212, 0.5);
         }
@@ -828,15 +828,15 @@
             background: linear-gradient(
                 90deg,
                 #003060 0%,
-                #0369a1 20%,
-                #06b6d4 45%,
+                #8f6a18 20%,
+                #d6a72c 45%,
                 #7dd3fc 55%,
-                #06b6d4 70%,
-                #0369a1 85%,
+                #d6a72c 70%,
+                #8f6a18 85%,
                 #003060 100%
             );
             background-size: 200% auto;
-            color: #e0f2fe;
+            color: #f7f7f5;
             box-shadow: 0 2px 14px rgba(6, 182, 212, 0.4);
             animation: ai-btn-cyan-flow 2.5s linear infinite;
 
@@ -851,7 +851,7 @@
         // ── Load Bot — outlined cyan ─────────────────────────────────────────
         &--primary {
             background: rgba(6, 182, 212, 0.1);
-            color: #06b6d4;
+            color: #d6a72c;
             border: 1.5px solid rgba(6, 182, 212, 0.45);
 
             &:hover:not(:disabled) {
@@ -871,7 +871,7 @@
 
             &:hover:not(:disabled) {
                 background: rgba(6, 182, 212, 0.08);
-                color: #06b6d4;
+                color: #d6a72c;
             }
             &:active:not(:disabled) { transform: scale(0.97); }
             &:disabled { opacity: 0.35; cursor: not-allowed; }
@@ -912,7 +912,7 @@
     width: 1.4rem;
     height: 1.4rem;
     border: 2px solid rgba(6, 182, 212, 0.18);
-    border-top-color: #06b6d4;
+    border-top-color: #d6a72c;
     border-radius: 50%;
     animation: ai-spin 0.7s linear infinite;
     flex-shrink: 0;
@@ -923,7 +923,7 @@
     to { transform: rotate(360deg); }
 }
 
-// ─── DBOTPULSE widget theme ───────────────────────────────────────────────────
+// ─── CEOTRADER widget theme ───────────────────────────────────────────────────
 .ai-scanner-trigger {
     background: linear-gradient(135deg, #20d4d4 0%, #d6b35a 100%);
     border-color: #20d4d4;
@@ -1186,44 +1186,42 @@
     box-shadow: 0 0 0.5rem rgb(34 211 238 / 45%);
 }
 
-/* Green DBOTPULSE theme for the floating AI launcher and scanner panel. */
+/* CEOTRADER charcoal, gold, and silver theme for the floating AI scanner. */
 .ai-scanner-trigger {
     width: 5.25rem;
     height: 5.25rem;
-    border-color: rgb(110 231 183 / 75%);
-    background:
-        linear-gradient(145deg, rgb(2 35 31 / 74%), rgb(1 17 17 / 92%)),
-        url('../../assets/green-abstract-gradient-background.jpg') center / cover;
-    box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 50%), 0 0 1.2rem rgb(52 211 153 / 38%);
+    border-color: rgb(214 167 44 / 82%);
+    background: linear-gradient(145deg, #d6a72c 0%, #a77b15 100%);
+    color: #111216;
+    box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 50%), 0 0 1.2rem rgb(214 167 44 / 38%);
     animation:
         ai-float 4s ease-in-out infinite,
-        ai-green-pulse 2.6s ease-in-out infinite;
+        ai-gold-pulse 2.6s ease-in-out infinite;
 
     &::before {
-        background: linear-gradient(105deg, transparent 35%, rgb(209 250 229 / 20%) 50%, transparent 65%);
+        background: linear-gradient(105deg, transparent 35%, rgb(255 255 255 / 28%) 50%, transparent 65%);
     }
 
     &::after {
-        background: linear-gradient(145deg, rgb(16 185 129 / 20%), transparent 60%);
+        background: linear-gradient(145deg, rgb(255 255 255 / 18%), transparent 60%);
     }
 
     span:not(.ai-scanner-trigger__wave) {
-        color: #d1fae5;
+        color: #111216;
         font-size: 1.5rem;
-        text-shadow: 0 0 0.7rem rgb(110 231 183 / 90%);
+        text-shadow: 0 0 0.7rem rgb(255 255 255 / 45%);
     }
 
     &:hover,
     &--active {
-        border-color: #a7f3d0;
-        box-shadow: 0 0.75rem 2rem rgb(0 0 0 / 55%), 0 0 2rem rgb(52 211 153 / 65%);
+        border-color: #f1d887;
+        box-shadow: 0 0.75rem 2rem rgb(0 0 0 / 55%), 0 0 2rem rgb(214 167 44 / 65%);
     }
 
     &__dot {
-        border-color: #022c22;
+        border-color: #111216;
     }
 
-    // Same visuals as the app loader: tilted orbit rings with glowing dots and a pulsing halo.
     &__wave,
     &__wave:nth-child(1),
     &__wave:nth-child(2),
@@ -1231,8 +1229,8 @@
         animation-delay: 0s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
-        border: 1px solid rgb(81 255 224 / 75%);
-        box-shadow: 0 0 0.9rem rgb(0 237 145 / 20%), inset 0 0 0.8rem rgb(0 237 145 / 12%);
+        border: 1px solid rgb(214 167 44 / 72%);
+        box-shadow: 0 0 0.9rem rgb(214 167 44 / 20%), inset 0 0 0.8rem rgb(214 167 44 / 12%);
 
         &::before {
             border-radius: 50%;
@@ -1248,8 +1246,8 @@
         transform: rotateX(68deg) rotateZ(-12deg);
 
         &::before {
-            background: #51ffe0;
-            box-shadow: 0 0 1rem #51ffe0;
+            background: #f1d887;
+            box-shadow: 0 0 1rem #f1d887;
             height: 0.55rem;
             left: 14%;
             top: 5%;
@@ -1261,13 +1259,13 @@
         animation-direction: reverse;
         animation-name: ai-ring-turn;
         animation-duration: 9s;
-        border-color: rgb(0 237 145 / 82%);
+        border-color: rgb(201 209 223 / 82%);
         inset: -8% -26%;
         transform: rotateX(70deg) rotateZ(38deg);
 
         &::before {
-            background: #dffff4;
-            box-shadow: 0 0 0.8rem #00ed91;
+            background: #ffffff;
+            box-shadow: 0 0 0.8rem #c9d1df;
             height: 0.4rem;
             left: 80%;
             top: 5%;
@@ -1279,7 +1277,7 @@
         animation-name: ai-halo-pulse;
         animation-duration: 3s;
         animation-timing-function: ease-out;
-        border-color: rgb(0 237 145 / 65%);
+        border-color: rgb(201 209 223 / 65%);
         box-shadow: none;
         inset: -9%;
     }
@@ -1298,24 +1296,22 @@
     50% { transform: translateY(-0.4rem); }
 }
 
-@keyframes ai-green-pulse {
+@keyframes ai-gold-pulse {
     0%,
     100% {
-        box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 50%), 0 0 1.2rem rgb(52 211 153 / 38%);
+        box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 50%), 0 0 1.2rem rgb(214 167 44 / 38%);
     }
 
     50% {
-        box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 50%), 0 0 2rem rgb(52 211 153 / 68%);
+        box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 50%), 0 0 2rem rgb(214 167 44 / 68%);
     }
 }
 
 .ai-scanner-modal {
-    border-color: rgb(110 231 183 / 48%);
-    background:
-        linear-gradient(145deg, rgb(2 22 20 / 90%), rgb(1 17 17 / 96%)),
-        url('../../assets/green-abstract-gradient-background.jpg') center / cover;
-    color: #e6fff5;
-    box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 62%), 0 0 2rem rgb(52 211 153 / 18%);
+    border-color: rgb(214 167 44 / 58%);
+    background: linear-gradient(145deg, #17191e 0%, #08090b 100%);
+    color: #c9d1df;
+    box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 62%), 0 0 2rem rgb(214 167 44 / 18%);
 
     p,
     span,
@@ -1323,74 +1319,76 @@
     label,
     div,
     button {
-        color: #e6fff5 !important;
+        color: #c9d1df !important;
+        font-style: normal;
     }
 
     input,
     select,
     option {
-        border-color: rgb(110 231 183 / 40%);
-        background: rgb(2 28 26 / 94%);
-        color: #ecfdf5 !important;
+        border-color: rgb(201 209 223 / 24%);
+        background: #111216;
+        color: #f7f7f5 !important;
     }
 
     .ai-scanner-modal__header {
-        background: linear-gradient(110deg, rgb(4 82 67 / 96%), rgb(2 35 31 / 98%));
-        border-bottom-color: rgb(110 231 183 / 28%);
+        background: linear-gradient(110deg, #25282e, #111216);
+        border-bottom-color: rgb(214 167 44 / 32%);
 
         h3 {
             background: none;
-            color: #d1fae5 !important;
-            -webkit-text-fill-color: #d1fae5;
-            filter: drop-shadow(0 0 0.5rem rgb(52 211 153 / 32%));
+            color: #f1d887 !important;
+            -webkit-text-fill-color: #f1d887;
+            filter: drop-shadow(0 0 0.5rem rgb(214 167 44 / 22%));
         }
     }
 
     .ai-scanner-modal__close {
-        border-color: rgb(110 231 183 / 42%);
-        background: rgb(2 28 26 / 85%);
+        border-color: rgb(201 209 223 / 32%);
+        background: #17191e;
 
         &:hover {
-            border-color: #6ee7b7;
-            background: rgb(16 185 129 / 24%);
+            border-color: #d6a72c;
+            background: rgb(214 167 44 / 14%);
         }
     }
 
     .ai-scanner-modal__mode-bar,
     .ai-scanner-modal__description,
     .ai-scanner-modal__tabs {
-        border-color: rgb(110 231 183 / 20%);
-        background: rgb(2 28 26 / 74%);
+        border-color: rgb(201 209 223 / 16%);
+        background: rgb(17 18 22 / 86%);
     }
 
     .ai-scanner-modal__mode-btn,
     .ai-scanner-modal__tab {
-        border-color: rgb(110 231 183 / 32%);
-        background-color: rgb(4 50 42 / 56%);
+        border-color: rgb(201 209 223 / 25%);
+        background-color: #25282e;
+        color: #c9d1df !important;
 
         &:hover:not(:disabled) {
-            border-color: #6ee7b7;
-            background-color: rgb(16 185 129 / 22%);
+            border-color: #d6a72c;
+            background-color: rgb(214 167 44 / 12%);
         }
 
         &--active,
         &--evenodd#{&}--active {
-            border-color: #6ee7b7;
-            background: linear-gradient(135deg, #047857, #10b981);
-            color: #ecfdf5 !important;
-            box-shadow: 0 0 0.8rem rgb(52 211 153 / 24%);
+            border-color: #d6a72c;
+            background: linear-gradient(135deg, #d6a72c, #a77b15);
+            color: #111216 !important;
+            box-shadow: 0 0 0.8rem rgb(214 167 44 / 24%);
         }
     }
 
     .ai-scanner-modal__strategy-info h4 {
-        background: linear-gradient(135deg, #ecfdf5, #6ee7b7);
+        background: linear-gradient(135deg, #ffffff, #c9d1df);
         -webkit-text-fill-color: transparent;
     }
 
     .ai-scanner-modal__section-label {
-        border-bottom-color: rgb(110 231 183 / 28%);
-        color: #6ee7b7 !important;
-        text-shadow: 0 0 0.6rem rgb(52 211 153 / 28%);
+        border-bottom-color: rgb(214 167 44 / 28%);
+        color: #d6a72c !important;
+        text-shadow: 0 0 0.6rem rgb(214 167 44 / 20%);
     }
 
     .ai-scanner-modal__best-card,
@@ -1398,38 +1396,38 @@
     .ai-scanner-modal__ticks input,
     .ai-scanner-modal__field span,
     .ai-scanner-modal__status {
-        border-color: rgb(110 231 183 / 28%);
-        background: rgb(2 28 26 / 76%);
+        border-color: rgb(201 209 223 / 18%);
+        background: rgb(17 18 22 / 84%);
     }
 
     .ai-scanner-modal__param input:focus,
     .ai-scanner-modal__ticks input:focus {
-        border-color: #6ee7b7;
-        box-shadow: 0 0 0 3px rgb(52 211 153 / 18%);
+        border-color: #d6a72c;
+        box-shadow: 0 0 0 3px rgb(214 167 44 / 18%);
     }
 
     .ai-scanner-modal__field .ai-scanner-modal__field-value--ai,
     .ai-scanner-modal__field-value--rate,
     .ai-scanner-modal__field-value--prediction {
-        border-color: rgb(110 231 183 / 45%) !important;
-        background: rgb(16 185 129 / 16%) !important;
-        color: #a7f3d0 !important;
-        text-shadow: 0 0 0.6rem rgb(52 211 153 / 30%) !important;
+        border-color: rgb(214 167 44 / 42%) !important;
+        background: rgb(214 167 44 / 12%) !important;
+        color: #f1d887 !important;
+        text-shadow: 0 0 0.6rem rgb(214 167 44 / 20%) !important;
     }
 
     .ai-scanner-modal__progress {
-        background: rgb(110 231 183 / 14%);
+        background: rgb(201 209 223 / 14%);
     }
 
     .ai-scanner-modal__progress-bar {
-        background: linear-gradient(90deg, #047857, #10b981, #6ee7b7);
+        background: linear-gradient(90deg, #a77b15, #d6a72c, #f1d887);
     }
 
     .ai-scanner-modal__status--scanning,
     .ai-scanner-modal__status--done {
-        border-color: rgb(110 231 183 / 34%);
-        background: rgb(4 50 42 / 78%);
-        color: #a7f3d0 !important;
+        border-color: rgb(214 167 44 / 34%);
+        background: rgb(214 167 44 / 10%);
+        color: #f1d887 !important;
     }
 
     .ai-scanner-modal__status--error {
@@ -1439,27 +1437,33 @@
     }
 
     .ai-scanner-modal__btn {
-        border-color: rgb(110 231 183 / 42%);
-        background: rgb(4 50 42 / 82%);
+        border-color: rgb(201 209 223 / 28%);
+        background: #25282e;
 
-        &--scan,
+        &--scan {
+            border-color: rgb(214 167 44 / 62%) !important;
+            background: linear-gradient(135deg, #d6a72c, #a77b15) !important;
+            color: #111216 !important;
+            box-shadow: 0 0.25rem 1rem rgb(214 167 44 / 20%);
+        }
+
         &--success {
-            border-color: rgb(167 243 208 / 62%) !important;
-            background: linear-gradient(135deg, #047857, #10b981) !important;
-            color: #ecfdf5 !important;
-            box-shadow: 0 0.25rem 1rem rgb(52 211 153 / 24%);
+            border-color: rgb(16 185 129 / 62%) !important;
+            background: linear-gradient(135deg, #059669, #10b981) !important;
+            color: #ffffff !important;
+            box-shadow: 0 0.25rem 1rem rgb(16 185 129 / 20%);
         }
 
         &--primary,
         &--secondary {
-            border-color: rgb(110 231 183 / 42%);
-            background: rgb(4 50 42 / 82%);
+            border-color: rgb(201 209 223 / 28%);
+            background: #25282e;
         }
     }
 }
 
 .ai-scanner-spinner {
-    border-color: rgb(110 231 183 / 22%);
-    border-top-color: #6ee7b7;
-    box-shadow: 0 0 0.5rem rgb(52 211 153 / 35%);
+    border-color: rgb(201 209 223 / 22%);
+    border-top-color: #d6a72c;
+    box-shadow: 0 0 0.5rem rgb(214 167 44 / 28%);
 }

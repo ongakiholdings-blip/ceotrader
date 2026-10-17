@@ -48,7 +48,7 @@ const TutorialsTab = observer(({ handleTabChange }: TTutorialsTab) => {
         <div className='tutorials-page'>
             <header className='tutorials-page__sidebar'>
                 <div className='tutorials-page__heading'>
-                    <span className='tutorials-page__eyebrow'>DBOTPULSE LEARNING CENTER</span>
+                    <span className='tutorials-page__eyebrow'>CEOTRADER LEARNING CENTER</span>
                     <h1>Learn at your own pace</h1>
                     <p>Explore tutorials, quick guides, answers, and affiliate information.</p>
                 </div>

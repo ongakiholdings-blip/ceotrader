@@ -93,14 +93,14 @@ const IndexNavigatorLoader = ({ isInitializing = true, isExiting = false }: TInd
 
             <div className='index-navigator-loader__layout'>
                 <header className='index-navigator-loader__topbar'>
-                    <span className='index-navigator-loader__wordmark'>DBOTPULSE</span>
+                    <span className='index-navigator-loader__wordmark'>CEOTRADER</span>
                     <nav aria-label='Trading platform sections'>
                         <span>TRADE</span><i /> <span>ANALYZE</span><i /> <span>GROW</span>
                     </nav>
                     <span className='index-navigator-loader__tagline'>REAL MARKETS. REAL OPPORTUNITIES.</span>
                 </header>
 
-                <section className='index-navigator-loader__core' aria-label='DBOTPULSE is loading'>
+                <section className='index-navigator-loader__core' aria-label='CEOTRADER is loading'>
                     <div className='index-navigator-loader__markets index-navigator-loader__markets--left'>
                         {markets.slice(0, 3).map(market => (
                             <MarketCard key={market.symbol} market={market} />
@@ -112,10 +112,12 @@ const IndexNavigatorLoader = ({ isInitializing = true, isExiting = false }: TInd
                         <div className='index-navigator-loader__orbit index-navigator-loader__orbit--outer' aria-hidden='true' />
                         <div className='index-navigator-loader__orbit index-navigator-loader__orbit--middle' aria-hidden='true' />
                         <div className='index-navigator-loader__orbit index-navigator-loader__orbit--inner' aria-hidden='true' />
-                        <div className='index-navigator-loader__logo' aria-label='DP, powered by Deriv'>
-                            <span className='index-navigator-loader__logo-letters'><b>D</b><b>P</b></span>
-                            <span className='index-navigator-loader__logo-name'>DBOTPULSE</span>
-                            <span className='index-navigator-loader__logo-powered'>POWERED BY DERIV</span>
+                        <div className='index-navigator-loader__logo'>
+                            <img
+                                className='index-navigator-loader__logo-image'
+                                src='/logo.jpeg'
+                                alt='CEOTRADER — Trade, Analyze, Grow'
+                            />
                         </div>
                         <div className='index-navigator-loader__chart index-navigator-loader__chart--left' aria-hidden='true'>
                             {CANDLES.map((candle, index) => <Candle key={index} candle={candle} index={index} />)}
@@ -137,8 +139,8 @@ const IndexNavigatorLoader = ({ isInitializing = true, isExiting = false }: TInd
 
                 <section className='index-navigator-loader__loading' aria-label='Loading progress'>
                     <div className='index-navigator-loader__brand-copy'>
-                        <h1>DBOT<span>PULSE</span></h1>
-                        <p>SMART TRADING <i>/</i> AUTOMATED <i>/</i> RELIABLE</p>
+                        <h1>CEOTRADER</h1>
+                        <p>TRADE <i>/</i> ANALYZE <i>/</i> GROW</p>
                     </div>
                     <div
                         className='index-navigator-loader__progress'

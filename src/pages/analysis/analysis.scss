@@ -3,7 +3,7 @@
 
 
 // Palette (dark-mode defaults — overridden per-theme below)
-$gold:         #f7c53b;
+$gold:         #d6a72c;
 $gold-bright:  #ffd96a;
 $gold-dim:     rgba(247, 197, 59, 0.14);
 $gold-glow:    rgba(247, 197, 59, 0.45);
@@ -12,7 +12,7 @@ $gold-border-h:rgba(247, 197, 59, 0.65);
 $dark-bg:      #07060100;
 $card-bg:      linear-gradient(155deg, #1c1600 0%, #120e03 45%, #0a0800 100%);
 $card-bg-inner:linear-gradient(160deg, #201900 0%, #140f04 50%, #0c0900 100%);
-$text-gold:    #f7c53b;
+$text-gold:    #d6a72c;
 $text-bright:  #fff8e6;
 $text-muted:   rgba(247, 220, 150, 0.55);
 $text-body:    rgba(230, 210, 160, 0.82);
@@ -751,15 +751,15 @@ body.theme--light {
 
         // ── Header ──────────────────────────────────────────────
         &__header {
-            border-bottom: 1px solid rgb(6 182 212 / 20%);
+            border-bottom: 1px solid rgb(214 167 44 / 20%);
 
             &::after {
-                background: linear-gradient(90deg, #06b6d4, transparent);
+                background: linear-gradient(90deg, #d6a72c, transparent);
             }
         }
 
         &__title {
-            background: linear-gradient(90deg, #b8860b 0%, #f7c53b 40%, #ffd96a 50%, #f7c53b 60%, #b8860b 100%);
+            background: linear-gradient(90deg, #b8860b 0%, #d6a72c 40%, #ffd96a 50%, #d6a72c 60%, #b8860b 100%);
             background-size: 200% auto;
             -webkit-background-clip: text;
             background-clip: text;
@@ -771,28 +771,28 @@ body.theme--light {
 
         // ── Mode toggle ─────────────────────────────────────────
         &__mode-btn {
-            border-color: rgb(6 182 212 / 25%);
-            background: rgb(6 182 212 / 4%);
+            border-color: rgb(214 167 44 / 25%);
+            background: rgb(214 167 44 / 4%);
             color: #4a5a8a;
 
             &:hover:not(:disabled) {
-                border-color: rgb(6 182 212 / 50%);
+                border-color: rgb(214 167 44 / 50%);
                 color: #1a2340;
-                background: rgb(6 182 212 / 8%);
+                background: rgb(214 167 44 / 8%);
             }
 
             &--active {
-                background: #f7c53b;
+                background: #d6a72c;
                 color: #0d1426;
-                border-color: #f7c53b;
+                border-color: #d6a72c;
                 font-weight: 700;
             }
         }
 
         // ── Primary tool tab bar ────────────────────────────────
         &__tool-tabs {
-            background: rgb(247 197 59 / 3%);
-            border: 1px solid rgb(247 197 59 / 20%);
+            background: rgb(214 167 44 / 3%);
+            border: 1px solid rgb(214 167 44 / 20%);
         }
 
         &__tool-tab {
@@ -800,37 +800,37 @@ body.theme--light {
 
             &:hover {
                 color: #1a2340;
-                border-color: rgb(247 197 59 / 25%);
-                background: rgb(247 197 59 / 6%);
+                border-color: rgb(214 167 44 / 25%);
+                background: rgb(214 167 44 / 6%);
             }
 
             &--active {
                 background: linear-gradient(135deg, #fffef0 0%, #fff8d6 100%);
                 color: #7a5800;
-                border-color: rgb(247 197 59 / 55%);
-                box-shadow: 0 0 12px rgb(247 197 59 / 14%), inset 0 0 8px rgb(247 197 59 / 4%);
+                border-color: rgb(214 167 44 / 55%);
+                box-shadow: 0 0 12px rgb(214 167 44 / 14%), inset 0 0 8px rgb(214 167 44 / 4%);
             }
         }
 
         // ── Tool card (main content cards) ──────────────────────
         &__tool {
             background: linear-gradient(155deg, #fefef8 0%, #f8faff 50%, #f3f7ff 100%);
-            border: 1px solid rgb(247 197 59 / 25%);
+            border: 1px solid rgb(214 167 44 / 25%);
             box-shadow:
-                0 0 0 1px rgb(6 182 212 / 6%),
-                0 0 24px rgb(6 182 212 / 5%),
+                0 0 0 1px rgb(214 167 44 / 6%),
+                0 0 24px rgb(214 167 44 / 5%),
                 0 4px 24px rgb(30 45 90 / 8%),
-                inset 0 0 30px rgb(247 197 59 / 2%);
+                inset 0 0 30px rgb(214 167 44 / 2%);
 
             // Gold top-edge shine
             &::before {
-                background: linear-gradient(90deg, transparent, #f7c53b 40%, #ffd96a 50%, #f7c53b 60%, transparent);
+                background: linear-gradient(90deg, transparent, #d6a72c 40%, #ffd96a 50%, #d6a72c 60%, transparent);
                 opacity: 0.35;
             }
         }
 
         &__tool-title {
-            background: linear-gradient(90deg, #b8860b 0%, #f7c53b 40%, #ffd96a 50%, #f7c53b 60%, #b8860b 100%);
+            background: linear-gradient(90deg, #b8860b 0%, #d6a72c 40%, #ffd96a 50%, #d6a72c 60%, #b8860b 100%);
             background-size: 200% auto;
             -webkit-background-clip: text;
             background-clip: text;
@@ -842,30 +842,30 @@ body.theme--light {
         // ── Inputs ──────────────────────────────────────────────
         &__input {
             background: #fefef9;
-            border: 1px solid rgb(6 182 212 / 28%);
+            border: 1px solid rgb(214 167 44 / 28%);
             color: #1a2340;
 
             &::placeholder { color: #8a9bbf; }
 
             &:focus {
-                border-color: #06b6d4;
-                box-shadow: 0 0 0 3px rgb(6 182 212 / 12%), 0 0 10px rgb(6 182 212 / 6%);
+                border-color: #d6a72c;
+                box-shadow: 0 0 0 3px rgb(214 167 44 / 12%), 0 0 10px rgb(214 167 44 / 6%);
             }
         }
 
         // ── Buttons ─────────────────────────────────────────────
         &__btn {
-            background: #f7c53b;
+            background: #d6a72c;
             color: #0d1426;
 
-            &:hover { background: #ffd96a; box-shadow: 0 0 14px rgb(247 197 59 / 40%); }
+            &:hover { background: #ffd96a; box-shadow: 0 0 14px rgb(214 167 44 / 40%); }
 
             &--secondary {
-                background: rgb(6 182 212 / 8%);
+                background: rgb(214 167 44 / 8%);
                 color: #3d4f80;
-                border: 1px solid rgb(6 182 212 / 25%);
+                border: 1px solid rgb(214 167 44 / 25%);
 
-                &:hover { background: rgb(6 182 212 / 14%); color: #1a2340; box-shadow: none; }
+                &:hover { background: rgb(214 167 44 / 14%); color: #1a2340; box-shadow: none; }
             }
         }
 
@@ -873,8 +873,8 @@ body.theme--light {
 
         // ── Bar chart ───────────────────────────────────────────
         &__bar-wrap {
-            background: rgb(247 197 59 / 5%);
-            border: 1px solid rgb(247 197 59 / 10%);
+            background: rgb(214 167 44 / 5%);
+            border: 1px solid rgb(214 167 44 / 10%);
         }
 
         &__bar-pct   { color: #6a7ba8; }
@@ -885,10 +885,10 @@ body.theme--light {
         &__stats-row { /* inherits from tool card context */ }
 
         &__stat {
-            background: rgb(247 197 59 / 4%);
-            border: 1px solid rgb(247 197 59 / 18%);
+            background: rgb(214 167 44 / 4%);
+            border: 1px solid rgb(214 167 44 / 18%);
 
-            &:hover { border-color: rgb(247 197 59 / 45%); }
+            &:hover { border-color: rgb(214 167 44 / 45%); }
         }
 
         &__stat-value {
@@ -900,11 +900,11 @@ body.theme--light {
         &__stat-label { color: #4a5a8a; }
 
         // ── Trade history ────────────────────────────────────────
-        &__history-title { color: #f7c53b; }
+        &__history-title { color: #d6a72c; }
 
         &__history-list {
-            &::-webkit-scrollbar-track { background: rgb(6 182 212 / 4%); border-radius: 4px; }
-            &::-webkit-scrollbar-thumb { background: rgb(6 182 212 / 25%); border-radius: 4px; }
+            &::-webkit-scrollbar-track { background: rgb(214 167 44 / 4%); border-radius: 4px; }
+            &::-webkit-scrollbar-thumb { background: rgb(214 167 44 / 25%); border-radius: 4px; }
         }
 
         &__history-row {
@@ -922,24 +922,24 @@ body.theme--light {
 
         &__calc-base {
             color: #3d4f80;
-            strong { color: #f7c53b; }
+            strong { color: #d6a72c; }
         }
 
         &__step-row { color: #3d4f80; }
         &__step-num { color: #1a2340; }
 
         &__step-bar-wrap {
-            background: rgb(247 197 59 / 6%);
-            border: 1px solid rgb(247 197 59 / 10%);
+            background: rgb(214 167 44 / 6%);
+            border: 1px solid rgb(214 167 44 / 10%);
         }
 
-        &__step-val  { color: #f7c53b; }
+        &__step-val  { color: #d6a72c; }
         &__step-warn { color: #ef4444; }
 
         // ── Strategies ───────────────────────────────────────────
         &__strat-tabs {
-            background: rgb(6 182 212 / 3%);
-            border: 1px solid rgb(6 182 212 / 18%);
+            background: rgb(214 167 44 / 3%);
+            border: 1px solid rgb(214 167 44 / 18%);
         }
 
         &__strat-tab {
@@ -947,8 +947,8 @@ body.theme--light {
 
             &:hover:not(&--active) {
                 color: #1a2340;
-                border-color: rgb(6 182 212 / 25%);
-                background: rgb(6 182 212 / 6%);
+                border-color: rgb(214 167 44 / 25%);
+                background: rgb(214 167 44 / 6%);
             }
 
             &--active {
@@ -957,40 +957,40 @@ body.theme--light {
         }
 
         &__strat-hero {
-            background: rgb(247 197 59 / 3%);
-            border: 1px solid rgb(247 197 59 / 18%);
+            background: rgb(214 167 44 / 3%);
+            border: 1px solid rgb(214 167 44 / 18%);
         }
 
         &__strat-risk {
             color: #4a5a8a;
-            strong { color: #f7c53b; }
+            strong { color: #d6a72c; }
         }
 
         &__strat-intro { color: #3d4f80; }
 
         &__strat-tip {
             background: rgb(254 254 249 / 90%);
-            border: 1px solid rgb(6 182 212 / 15%);
-            border-left: 3px solid #f7c53b;
+            border: 1px solid rgb(214 167 44 / 15%);
+            border-left: 3px solid #d6a72c;
 
             &:hover {
-                border-color: rgb(6 182 212 / 30%);
+                border-color: rgb(214 167 44 / 30%);
                 border-left-color: #ffd96a;
-                box-shadow: 0 0 14px rgb(247 197 59 / 6%);
+                box-shadow: 0 0 14px rgb(214 167 44 / 6%);
             }
         }
 
-        &__strat-tip-title { color: #f7c53b; }
+        &__strat-tip-title { color: #d6a72c; }
         &__strat-tip-body  { color: #3d4f80; }
 
         &__strat-note {
-            background: rgb(6 182 212 / 5%);
-            border: 1px solid rgb(6 182 212 / 20%);
+            background: rgb(214 167 44 / 5%);
+            border: 1px solid rgb(214 167 44 / 20%);
             color: #3d4f80;
         }
 
         // Note icon: cyan accent in light mode (gold in dark)
-        &__strat-note-icon { color: #06b6d4; }
+        &__strat-note-icon { color: #d6a72c; }
     }
 }
 
@@ -1036,7 +1036,7 @@ body.theme--dark {
         border-color: rgb(255 255 255 / 72%) !important;
         box-shadow:
             0 1.2rem 2.8rem rgb(5 53 91 / 20%),
-            0 0 1.2rem rgb(49 212 205 / 20%),
+            0 0 1.2rem rgb(214 167 44 / 20%),
             inset 0 1px rgb(255 255 255 / 72%) !important;
         backdrop-filter: blur(18px);
     }

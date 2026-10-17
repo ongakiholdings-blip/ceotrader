@@ -1,7 +1,7 @@
 @use 'components/shared/styles/constants' as *;
 @use 'components/shared/styles/mixins' as *;
 
-/* ── DBOTPULSE tab theme ── */
+/* ── CEOTRADER tab theme ── */
 @property --n-angle {
     syntax: '<angle>';
     initial-value: 0deg;
@@ -279,7 +279,7 @@ html {
 
         &__card-icon {
             align-items: center;
-            background: #ffcc3b;
+            background: #d6a72c;
             border-radius: 1.2rem;
             color: #062b56;
             display: flex;

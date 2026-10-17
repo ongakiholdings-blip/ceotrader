@@ -16,8 +16,8 @@
 }
 
 @keyframes oue-pulse-under {
-    0%, 100% { box-shadow: 0 0 0 0 rgb(59 130 246 / 0%), 0 4px 20px rgb(0 0 0 / 30%); }
-    50%       { box-shadow: 0 0 0 6px rgb(59 130 246 / 18%), 0 8px 32px rgb(59 130 246 / 12%); }
+    0%, 100% { box-shadow: 0 0 0 0 rgb(214 167 44 / 0%), 0 4px 20px rgb(0 0 0 / 30%); }
+    50%       { box-shadow: 0 0 0 6px rgb(214 167 44 / 18%), 0 8px 32px rgb(214 167 44 / 12%); }
 }
 
 @keyframes oue-win-flash {
@@ -291,8 +291,8 @@
     gap: 1.5rem;
     padding: clamp(1rem, 3vw, 3rem);
     background:
-        radial-gradient(circle at 12% 8%, rgb(247 197 59 / 12%), transparent 30%),
-        radial-gradient(circle at 88% 90%, rgb(6 182 212 / 10%), transparent 34%);
+        radial-gradient(circle at 12% 8%, rgb(214 167 44 / 12%), transparent 30%),
+        radial-gradient(circle at 88% 90%, rgb(214 167 44 / 10%), transparent 34%);
 }
 
 .oue__strategy-picker-header {
@@ -493,7 +493,7 @@
     gap: 1rem;
     padding: clamp(1rem, 3vw, 2rem);
     background:
-        radial-gradient(circle at 12% 8%, rgb(6 182 212 / 12%), transparent 30%),
+        radial-gradient(circle at 12% 8%, rgb(214 167 44 / 12%), transparent 30%),
         radial-gradient(circle at 88% 90%, rgb(214 179 90 / 10%), transparent 34%);
 }
 
@@ -522,7 +522,7 @@
     min-height: 42rem;
     flex: 1;
     overflow: hidden;
-    border: 1px solid rgb(6 182 212 / 30%);
+    border: 1px solid rgb(214 167 44 / 30%);
     border-radius: 0.75rem;
     background: rgb(3 15 29 / 75%);
 
@@ -538,7 +538,7 @@
     gap: 0.8rem;
     align-items: end;
     padding: 1rem;
-    border: 1px solid rgb(6 182 212 / 30%);
+    border: 1px solid rgb(214 167 44 / 30%);
     border-radius: 0.75rem;
     background: rgb(3 15 29 / 88%);
 
@@ -605,7 +605,7 @@
     cursor: pointer;
 
     &--active {
-        background: #06b6d4;
+        background: #d6a72c;
         color: #062b3d;
     }
 }
@@ -614,7 +614,7 @@
     min-height: 2.7rem;
     border: 0;
     border-radius: 0.5rem;
-    background: linear-gradient(135deg, #00c896, #06b6d4);
+    background: linear-gradient(135deg, #00c896, #d6a72c);
     color: #fff;
     font-weight: 900;
     cursor: pointer;
@@ -676,7 +676,7 @@
     min-height: 2.2rem;
     padding: 0.25rem 0.55rem;
     border-radius: 7px;
-    background: linear-gradient(135deg, #0e7490, #0891b2 48%, #38bdf8);
+    background: linear-gradient(135deg, #0e7490, #0891b2 48%, #eed58d);
     border: 1px solid rgb(255 255 255 / 55%);
     box-shadow: inset 0 1px 0 rgb(255 255 255 / 55%), 0 4px 12px rgb(14 116 144 / 28%);
     color: #fff;
@@ -1235,9 +1235,9 @@
         }
 
         &--under {
-            background: rgb(59 130 246 / 20%);
+            background: rgb(214 167 44 / 20%);
             color: #60a5fa;
-            border: 1.5px solid rgb(59 130 246 / 40%);
+            border: 1.5px solid rgb(214 167 44 / 40%);
         }
 
         &--neutral {
@@ -1251,7 +1251,7 @@
             z-index: 1;
 
             &.oue__digit--over    { box-shadow: 0 0 10px rgb(16 185 129 / 50%); }
-            &.oue__digit--under   { box-shadow: 0 0 10px rgb(59 130 246 / 50%); }
+            &.oue__digit--under   { box-shadow: 0 0 10px rgb(214 167 44 / 50%); }
             &.oue__digit--neutral { box-shadow: 0 0 10px rgb(100 116 139 / 30%); }
         }
     }
@@ -1291,7 +1291,7 @@
         color: var(--text-general);
 
         &--last {
-            color: #f7c53b;
+            color: #d6a72c;
         }
     }
 
@@ -1391,11 +1391,11 @@
         }
 
         &--under {
-            border-color: rgb(59 130 246 / 30%);
+            border-color: rgb(214 167 44 / 30%);
             animation: oue-pulse-under 3s ease-in-out infinite;
 
             .oue__panel-name { color: #60a5fa; }
-            .oue__panel-win-pct { color: #60a5fa; background: rgb(59 130 246 / 12%); }
+            .oue__panel-win-pct { color: #60a5fa; background: rgb(214 167 44 / 12%); }
         }
 
         &--won {
@@ -1551,7 +1551,7 @@
     }
 
     &__live-price-digit {
-        color: #f7c53b;
+        color: #d6a72c;
         font-weight: 900;
     }
 
@@ -2292,13 +2292,13 @@
         border: 1.5px solid rgba(247, 197, 59, 0.35);
         font-size: 0.9rem;
         font-weight: 600;
-        color: #f7c53b;
+        color: #d6a72c;
         letter-spacing: 0.02em;
         margin-left: 0.4rem;
 
         strong {
             font-weight: 900;
-            color: #f7c53b;
+            color: #d6a72c;
         }
     }
 
@@ -2307,7 +2307,7 @@
         width: 0.65rem;
         height: 0.65rem;
         border-radius: 50%;
-        background: #f7c53b;
+        background: #d6a72c;
         opacity: 1;
         animation: none;
         flex-shrink: 0;
@@ -2317,7 +2317,7 @@
 
     &__digit--entry {
         background: rgba(247, 197, 59, 0.18) !important;
-        color: #f7c53b !important;
+        color: #d6a72c !important;
         border: 1.5px solid rgba(247, 197, 59, 0.5) !important;
 
         &.oue__digit--last {
@@ -2325,7 +2325,7 @@
         }
     }
 
-    &__legend-dot--entry { background: #f7c53b; }
+    &__legend-dot--entry { background: #d6a72c; }
 
     // ── waiting-for-entry bar ────────────────────────────────────────────────
 
@@ -2339,7 +2339,7 @@
         background: rgba(247, 197, 59, 0.07);
         border: 1px solid rgba(247, 197, 59, 0.2);
         font-size: 1.45rem;
-        color: #f7c53b;
+        color: #d6a72c;
         font-weight: 500;
 
         strong { font-weight: 800; }
@@ -2349,7 +2349,7 @@
         width: 0.7rem;
         height: 0.7rem;
         border-radius: 50%;
-        background: #f7c53b;
+        background: #d6a72c;
         flex-shrink: 0;
         opacity: 1;
         animation: none;
@@ -2360,7 +2360,7 @@
         font-size: 1.3rem;
         color: rgba(247, 197, 59, 0.65);
 
-        strong { color: #f7c53b; }
+        strong { color: #d6a72c; }
     }
 
     // ── entry-mode toggle ────────────────────────────────────────────────────
@@ -2404,7 +2404,7 @@
 
         &--on {
             background: rgba(247, 197, 59, 0.2);
-            border-color: #f7c53b;
+            border-color: #d6a72c;
         }
 
         &[aria-disabled='true'] {
@@ -2426,7 +2426,7 @@
 
         .oue__toggle--on & {
             transform: translate(2rem, -50%);
-            background: #f7c53b;
+            background: #d6a72c;
         }
     }
 
@@ -2624,8 +2624,8 @@
 body.theme--light {
     .oue {
         background:
-            radial-gradient(ellipse 80% 50% at 50% -10%, rgb(6 182 212 / 8%) 0%, transparent 60%),
-            radial-gradient(ellipse 60% 40% at 80% 100%, rgb(6 182 212 / 5%) 0%, transparent 50%),
+            radial-gradient(ellipse 80% 50% at 50% -10%, rgb(214 167 44 / 8%) 0%, transparent 60%),
+            radial-gradient(ellipse 60% 40% at 80% 100%, rgb(214 167 44 / 5%) 0%, transparent 50%),
             linear-gradient(160deg, rgb(238 246 251 / 90%) 0%, rgb(245 249 252 / 90%) 50%, rgb(237 243 248 / 92%) 100%),
             url('../../assets/green-abstract-gradient-background.jpg');
         background-size: auto, auto, auto, cover;
@@ -2634,8 +2634,8 @@ body.theme--light {
 
         @media (max-width: 640px) {
             background-image:
-                radial-gradient(ellipse 80% 50% at 50% -10%, rgb(6 182 212 / 8%) 0%, transparent 60%),
-                radial-gradient(ellipse 60% 40% at 80% 100%, rgb(6 182 212 / 5%) 0%, transparent 50%),
+                radial-gradient(ellipse 80% 50% at 50% -10%, rgb(214 167 44 / 8%) 0%, transparent 60%),
+                radial-gradient(ellipse 60% 40% at 80% 100%, rgb(214 167 44 / 5%) 0%, transparent 50%),
                 linear-gradient(160deg, rgb(238 246 251 / 90%) 0%, rgb(245 249 252 / 90%) 50%, rgb(237 243 248 / 92%) 100%),
                 url('../../assets/green-abstract-gradient-background.jpg');
         }
@@ -2645,7 +2645,7 @@ body.theme--light {
             content: '';
             position: fixed;
             inset: 0;
-            background-image: radial-gradient(circle, rgb(6 182 212 / 12%) 1px, transparent 1px);
+            background-image: radial-gradient(circle, rgb(214 167 44 / 12%) 1px, transparent 1px);
             background-size: 24px 24px;
             pointer-events: none;
             z-index: 0;
@@ -2715,8 +2715,8 @@ body.theme--light {
         .oue__summary,
         .oue__controls {
             background: linear-gradient(145deg, #ffffff 0%, #f0f8ff 100%);
-            border: 1.5px solid rgb(6 182 212 / 25%);
-            box-shadow: 0 2px 16px rgb(6 182 212 / 8%), 0 1px 4px rgb(0 0 0 / 4%);
+            border: 1.5px solid rgb(214 167 44 / 25%);
+            box-shadow: 0 2px 16px rgb(214 167 44 / 8%), 0 1px 4px rgb(0 0 0 / 4%);
             overflow: hidden;
             position: relative;
 
@@ -2727,7 +2727,7 @@ body.theme--light {
                 background: linear-gradient(
                     105deg,
                     transparent 30%,
-                    rgb(6 182 212 / 6%) 50%,
+                    rgb(214 167 44 / 6%) 50%,
                     transparent 70%
                 );
                 background-size: 200% 100%;
@@ -2736,8 +2736,8 @@ body.theme--light {
             }
 
             &:hover {
-                border-color: rgb(6 182 212 / 45%);
-                box-shadow: 0 4px 24px rgb(6 182 212 / 14%), 0 1px 4px rgb(0 0 0 / 4%);
+                border-color: rgb(214 167 44 / 45%);
+                box-shadow: 0 4px 24px rgb(214 167 44 / 14%), 0 1px 4px rgb(0 0 0 / 4%);
             }
         }
 
@@ -2777,9 +2777,9 @@ body.theme--light {
             }
 
             &--under {
-                border-color: rgb(59 130 246 / 35%);
-                box-shadow: 0 2px 12px rgb(59 130 246 / 8%);
-                &:hover { border-color: rgb(59 130 246 / 55%); box-shadow: 0 4px 20px rgb(59 130 246 / 14%); }
+                border-color: rgb(214 167 44 / 35%);
+                box-shadow: 0 2px 12px rgb(214 167 44 / 8%);
+                &:hover { border-color: rgb(214 167 44 / 55%); box-shadow: 0 4px 20px rgb(214 167 44 / 14%); }
             }
         }
 
@@ -2791,9 +2791,9 @@ body.theme--light {
                 background: linear-gradient(
                     90deg,
                     #0e7490 0%,
-                    #06b6d4 30%,
+                    #d6a72c 30%,
                     #22d3ee 50%,
-                    #06b6d4 70%,
+                    #d6a72c 70%,
                     #0e7490 100%
                 );
                 background-size: 200% auto;
@@ -2806,48 +2806,48 @@ body.theme--light {
 
         // ── stats inner cells ────────────────────────────────────────────────
         .oue__stat {
-            background: rgb(6 182 212 / 6%);
-            border: 1px solid rgb(6 182 212 / 12%);
+            background: rgb(214 167 44 / 6%);
+            border: 1px solid rgb(214 167 44 / 12%);
         }
 
         // ── input focus ──────────────────────────────────────────────────────
         .oue__input:focus {
-            border-color: #06b6d4;
-            box-shadow: 0 0 0 2px rgb(6 182 212 / 15%);
+            border-color: #d6a72c;
+            box-shadow: 0 0 0 2px rgb(214 167 44 / 15%);
         }
 
         // ── market trigger ───────────────────────────────────────────────────
         .oue__market-trigger {
-            border-color: rgb(6 182 212 / 30%);
-            background: rgb(6 182 212 / 5%);
+            border-color: rgb(214 167 44 / 30%);
+            background: rgb(214 167 44 / 5%);
 
             &:hover:not(:disabled) {
-                border-color: rgb(6 182 212 / 60%);
-                background: rgb(6 182 212 / 10%);
+                border-color: rgb(214 167 44 / 60%);
+                background: rgb(214 167 44 / 10%);
                 color: #0e7490;
             }
         }
 
         .oue__market-selector--open .oue__market-trigger--header {
-            border-color: #06b6d4;
-            background: rgb(6 182 212 / 12%);
+            border-color: #d6a72c;
+            background: rgb(214 167 44 / 12%);
             color: #0e7490;
         }
 
         // ── entry-waiting ────────────────────────────────────────────────────
         .oue__entry-toggle {
-            border-top-color: rgb(6 182 212 / 20%);
+            border-top-color: rgb(214 167 44 / 20%);
         }
 
         // ── D-Circles button ─────────────────────────────────────────────────
         .oue__dcircles-btn {
-            border-color: rgb(6 182 212 / 35%);
-            background: rgb(6 182 212 / 6%);
+            border-color: rgb(214 167 44 / 35%);
+            background: rgb(214 167 44 / 6%);
             color: #0891b2;
 
             &:hover {
-                background: rgb(6 182 212 / 14%);
-                border-color: rgb(6 182 212 / 65%);
+                background: rgb(214 167 44 / 14%);
+                border-color: rgb(214 167 44 / 65%);
                 color: #0e7490;
             }
         }
@@ -2955,9 +2955,9 @@ body.theme--dark {
             }
 
             &--under {
-                border-color: rgb(59 130 246 / 30%);
-                box-shadow: 0 2px 16px rgb(0 0 0 / 35%), inset 0 1px 0 rgb(59 130 246 / 8%);
-                &:hover { border-color: rgb(59 130 246 / 50%); box-shadow: 0 4px 24px rgb(0 0 0 / 45%), 0 0 12px rgb(59 130 246 / 10%); }
+                border-color: rgb(214 167 44 / 30%);
+                box-shadow: 0 2px 16px rgb(0 0 0 / 35%), inset 0 1px 0 rgb(214 167 44 / 8%);
+                &:hover { border-color: rgb(214 167 44 / 50%); box-shadow: 0 4px 24px rgb(0 0 0 / 45%), 0 0 12px rgb(214 167 44 / 10%); }
             }
         }
 

@@ -1,10 +1,10 @@
 .index-navigator-loader {
-    --loader-green: #00ed91;
-    --loader-teal: #51ffe0;
-    --loader-white: #effff9;
+    --loader-green: #d6a72c;
+    --loader-teal: #c9d1df;
+    --loader-white: #f7f7f5;
 
     align-items: center;
-    background: #020605;
+    background: #08090b;
     color: var(--loader-white);
     display: flex;
     height: 100vh;
@@ -25,8 +25,8 @@
 
     &__ambient {
         background:
-            radial-gradient(ellipse at 50% 44%, rgb(0 111 73 / 20%), transparent 42%),
-            radial-gradient(ellipse at 50% 100%, rgb(0 42 33 / 34%), transparent 52%);
+            radial-gradient(ellipse at 50% 44%, rgb(214 167 44 / 12%), transparent 42%),
+            radial-gradient(ellipse at 50% 100%, rgb(201 209 223 / 8%), transparent 52%);
         inset: 0;
         overflow: hidden;
         pointer-events: none;
@@ -35,7 +35,7 @@
         i {
             animation: loader-particle-drift 9s ease-in-out infinite;
             background: var(--loader-teal);
-            border-radius: 50%;
+            border-radius: 0;
             box-shadow: 0 0 0.65rem var(--loader-green);
             height: 2px;
             opacity: 0;
@@ -57,8 +57,8 @@
 
     &__topbar {
         align-items: center;
-        border-bottom: 1px solid rgb(0 237 145 / 24%);
-        color: #c7ded6;
+        border-bottom: 1px solid rgb(214 167 44 / 32%);
+        color: #c9d1df;
         display: grid;
         font-size: clamp(0.52rem, 0.8vw, 0.72rem);
         gap: 1rem;
@@ -109,8 +109,8 @@
 
     &__market {
         align-items: center;
-        background: linear-gradient(115deg, rgb(3 24 19 / 80%), rgb(5 32 25 / 55%));
-        border: 1px solid rgb(0 237 145 / 24%);
+        background: linear-gradient(115deg, rgb(17 18 22 / 88%), rgb(37 40 46 / 62%));
+        border: 1px solid rgb(214 167 44 / 28%);
         border-radius: 0.5rem;
         display: flex;
         font: 600 clamp(0.56rem, 0.8vw, 0.78rem) / 1.2 ui-monospace, monospace;
@@ -125,7 +125,7 @@
             margin-left: 0.35rem;
         }
 
-        .is-positive { color: #20f3a1; }
+        .is-positive { color: #20c987; }
         .is-negative { color: #ff6072; }
     }
 
@@ -143,13 +143,13 @@
     &__globe {
         animation: loader-globe-turn 48s linear infinite;
         background:
-            linear-gradient(90deg, transparent 49.6%, rgb(81 255 224 / 26%) 50%, transparent 50.4%),
-            repeating-linear-gradient(0deg, transparent 0 17%, rgb(81 255 224 / 12%) 17.4% 17.8%, transparent 18.2% 34%),
-            repeating-linear-gradient(90deg, transparent 0 17%, rgb(81 255 224 / 10%) 17.4% 17.8%, transparent 18.2% 34%),
-            radial-gradient(circle at 36% 32%, rgb(0 220 143 / 24%), rgb(1 15 16 / 94%) 66%);
-        border: 1px solid rgb(81 255 224 / 35%);
+            linear-gradient(90deg, transparent 49.6%, rgb(201 209 223 / 22%) 50%, transparent 50.4%),
+            repeating-linear-gradient(0deg, transparent 0 17%, rgb(201 209 223 / 10%) 17.4% 17.8%, transparent 18.2% 34%),
+            repeating-linear-gradient(90deg, transparent 0 17%, rgb(201 209 223 / 8%) 17.4% 17.8%, transparent 18.2% 34%),
+            radial-gradient(circle at 36% 32%, rgb(214 167 44 / 16%), rgb(8 9 11 / 96%) 66%);
+        border: 1px solid rgb(201 209 223 / 35%);
         border-radius: 50%;
-        box-shadow: inset -1.2rem 0 2.5rem rgb(0 0 0 / 78%), 0 0 2rem rgb(0 237 145 / 14%);
+        box-shadow: inset -1.2rem 0 2.5rem rgb(0 0 0 / 78%), 0 0 2rem rgb(214 167 44 / 12%);
         height: 59%;
         opacity: 0.64;
         position: absolute;
@@ -157,7 +157,7 @@
     }
 
     &__orbit {
-        border: 1px solid rgb(0 237 145 / 63%);
+        border: 1px solid rgb(214 167 44 / 63%);
         border-radius: 50%;
         height: 76%;
         position: absolute;
@@ -173,8 +173,8 @@
 
         &--outer {
             animation: loader-ring-turn 13s linear infinite;
-            border-color: rgb(81 255 224 / 75%);
-            box-shadow: 0 0 0.9rem rgb(0 237 145 / 20%), inset 0 0 0.8rem rgb(0 237 145 / 12%);
+            border-color: rgb(201 209 223 / 75%);
+            box-shadow: 0 0 0.9rem rgb(214 167 44 / 20%), inset 0 0 0.8rem rgb(214 167 44 / 12%);
             height: 93%;
             transform: rotateX(68deg) rotateZ(-12deg);
             width: 112%;
@@ -191,14 +191,14 @@
 
         &--middle {
             animation: loader-ring-turn 9s linear infinite reverse;
-            border-color: rgb(0 237 145 / 82%);
-            box-shadow: 0 0 1.2rem rgb(0 237 145 / 20%);
+            border-color: rgb(214 167 44 / 82%);
+            box-shadow: 0 0 1.2rem rgb(214 167 44 / 20%);
             height: 83%;
             transform: rotateX(70deg) rotateZ(38deg);
             width: 106%;
 
             &::before {
-                background: #dffff4;
+                background: #f7f7f5;
                 box-shadow: 0 0 0.8rem var(--loader-green);
                 height: 0.4rem;
                 left: 80%;
@@ -209,7 +209,7 @@
 
         &--inner {
             animation: loader-ring-turn 18s linear infinite;
-            border-color: rgb(81 255 224 / 34%);
+            border-color: rgb(201 209 223 / 34%);
             height: 70%;
             transform: rotateX(65deg) rotateZ(-54deg);
             width: 93%;
@@ -219,12 +219,10 @@
     &__logo {
         align-items: center;
         animation: loader-logo-float 4s ease-in-out infinite;
-        background:
-            radial-gradient(circle at 35% 25%, rgb(214 255 238 / 23%), transparent 32%),
-            linear-gradient(145deg, #172522, #030907 58%, #072117);
-        border: 2px solid rgb(0 237 145 / 86%);
-        border-radius: 50%;
-        box-shadow: 0 0 0 0.35rem rgb(0 237 145 / 8%), 0 0 2rem rgb(0 237 145 / 35%), inset 0 0 1.2rem rgb(0 237 145 / 14%);
+        background: #08090b;
+        border: 0;
+        border-radius: 0;
+        box-shadow: 0 0 2rem rgb(214 167 44 / 26%);
         display: flex;
         flex-direction: column;
         height: 47%;
@@ -233,40 +231,14 @@
         width: 47%;
         z-index: 2;
 
-        &::before {
-            animation: loader-logo-pulse 3s ease-out infinite;
-            border: 1px solid rgb(0 237 145 / 65%);
-            border-radius: 50%;
-            content: '';
-            inset: -9%;
-            position: absolute;
-        }
     }
 
-    &__logo-letters {
-        display: flex;
-        font: 900 clamp(2.4rem, 8vw, 7rem) / 0.85 Arial, sans-serif;
-        letter-spacing: -0.16em;
-        padding-right: 0.16em;
-        text-shadow: 0 0 1.2rem rgb(0 237 145 / 28%);
-
-        b:first-child { color: #edf5f1; }
-        b:last-child { color: var(--loader-green); }
-    }
-
-    &__logo-name {
-        color: var(--loader-white);
-        font-size: clamp(0.45rem, 1vw, 0.9rem);
-        font-weight: 900;
-        letter-spacing: 0.12em;
-        margin-top: 0.6rem;
-    }
-
-    &__logo-powered {
-        color: #b6d9ce;
-        font-size: clamp(0.35rem, 0.62vw, 0.56rem);
-        letter-spacing: 0.1em;
-        margin-top: 0.25rem;
+    &__logo-image {
+        border-radius: 0;
+        display: block;
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
     }
 
     &__chart {
@@ -286,8 +258,8 @@
 
     &__candle {
         animation: loader-candle-update 1.8s ease-in-out infinite;
-        background: var(--loader-green);
-        box-shadow: 0 0 0.55rem rgb(0 237 145 / 42%);
+        background: #20c987;
+        box-shadow: 0 0 0.55rem rgb(32 201 135 / 42%);
         height: var(--candle-height);
         position: relative;
         width: clamp(3px, 0.62vw, 8px);
@@ -320,7 +292,7 @@
 
     &__platform {
         animation: loader-platform-pulse 3s ease-in-out infinite;
-        border: 2px solid rgb(0 237 145 / 73%);
+        border: 2px solid rgb(214 167 44 / 73%);
         border-radius: 50%;
         bottom: 7%;
         height: 16%;
@@ -329,7 +301,7 @@
 
         span,
         i {
-            border: 1px solid rgb(81 255 224 / 45%);
+            border: 1px solid rgb(201 209 223 / 45%);
             border-radius: 50%;
             inset: 14% -3%;
             position: absolute;
@@ -339,7 +311,7 @@
 
         i {
             animation: loader-core-beam 2.2s ease-in-out infinite;
-            background: linear-gradient(90deg, transparent, rgb(0 237 145 / 50%), transparent);
+            background: linear-gradient(90deg, transparent, rgb(214 167 44 / 50%), transparent);
             border: 0;
             border-radius: 0;
             height: 270%;
@@ -374,7 +346,7 @@
         }
 
         p {
-            color: #c2d4cc;
+            color: #c9d1df;
             font-size: clamp(0.48rem, 0.9vw, 0.72rem);
             letter-spacing: 0.3em;
             margin: 0.55rem 0 0;
@@ -389,8 +361,8 @@
     }
 
     &__progress {
-        background: #041a12;
-        border: 1px solid rgb(0 237 145 / 67%);
+        background: #111216;
+        border: 1px solid rgb(214 167 44 / 67%);
         border-radius: 999px;
         height: clamp(0.65rem, 1.55vh, 1rem);
         overflow: hidden;
@@ -399,7 +371,7 @@
     }
 
     &__progress-fill {
-        background: linear-gradient(90deg, #00a969, #b8ffdc 45%, #00ed91);
+        background: linear-gradient(90deg, #8f6a18, #f7f7f5 45%, #d6a72c);
         border-radius: inherit;
         display: block;
         height: 100%;
@@ -408,7 +380,7 @@
 
     &__progress-meta {
         align-items: center;
-        color: #c2d4cc;
+        color: #c9d1df;
         display: flex;
         font: 600 clamp(0.55rem, 0.8vw, 0.72rem) / 1.2 ui-monospace, monospace;
         justify-content: space-between;
@@ -424,7 +396,7 @@
 
     &__features {
         align-items: center;
-        border-top: 1px solid rgb(0 237 145 / 21%);
+        border-top: 1px solid rgb(214 167 44 / 21%);
         display: flex;
         gap: clamp(0.5rem, 2vw, 2rem);
         justify-content: center;
@@ -444,14 +416,14 @@
         }
 
         strong {
-            color: #e5f5ee;
+            color: #e8e8e5;
             font-size: clamp(0.45rem, 0.72vw, 0.66rem);
             letter-spacing: 0.08em;
             white-space: nowrap;
         }
 
         small {
-            color: #91afa3;
+            color: #aeb4be;
             font-size: clamp(0.4rem, 0.65vw, 0.6rem);
             margin-top: 0.18rem;
             white-space: nowrap;
@@ -459,8 +431,8 @@
     }
 
     &[data-phase='logo'] &__logo { filter: brightness(1.1); }
-    &[data-phase='orbit'] &__orbit { border-color: rgb(81 255 224 / 75%); }
-    &[data-phase='market'] &__market { border-color: rgb(0 237 145 / 56%); }
+    &[data-phase='orbit'] &__orbit { border-color: rgb(201 209 223 / 75%); }
+    &[data-phase='market'] &__market { border-color: rgb(214 167 44 / 56%); }
     &[data-phase='ready'] &__logo { filter: brightness(1.25); }
 }
 
@@ -470,11 +442,6 @@
 
 @keyframes loader-logo-float {
     50% { translate: 0 -0.4rem; }
-}
-
-@keyframes loader-logo-pulse {
-    0% { opacity: 0.8; transform: scale(0.94); }
-    100% { opacity: 0; transform: scale(1.28); }
 }
 
 @keyframes loader-globe-turn {
@@ -487,7 +454,7 @@
 }
 
 @keyframes loader-platform-pulse {
-    50% { box-shadow: 0 0 1.6rem rgb(0 237 145 / 42%), inset 0 0 1.2rem rgb(0 237 145 / 16%); }
+    50% { box-shadow: 0 0 1.6rem rgb(214 167 44 / 42%), inset 0 0 1.2rem rgb(214 167 44 / 16%); }
 }
 
 @keyframes loader-core-beam {

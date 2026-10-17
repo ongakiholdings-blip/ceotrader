@@ -10,8 +10,12 @@ describe('IndexNavigatorLoader', () => {
     it('renders the live trading scene and six updating market cards', () => {
         const { container } = render(<IndexNavigatorLoader />);
 
-        expect(screen.getAllByText('DBOTPULSE')).toHaveLength(2);
-        expect(screen.getByText('POWERED BY DERIV')).toBeInTheDocument();
+        expect(screen.getAllByText('CEOTRADER')).toHaveLength(2);
+        expect(screen.getByRole('img', { name: 'CEOTRADER — Trade, Analyze, Grow' })).toHaveAttribute(
+            'src',
+            '/logo.jpeg'
+        );
+        expect(screen.queryByText(/DBOT|PULSE|\bDP\b/i)).not.toBeInTheDocument();
         expect(container.querySelectorAll('.index-navigator-loader__market')).toHaveLength(6);
         expect(container.querySelectorAll('.index-navigator-loader__candle')).toHaveLength(16);
         expect(screen.getByRole('progressbar', { name: 'Loading trading workspace' })).toHaveAttribute(

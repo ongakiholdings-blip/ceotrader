@@ -49,7 +49,7 @@ type OnErrorCallback = (msg: string) => void;
 
 // ─── helpers ─────────────────────────────────────────────────────────────────
 
-const APP_ID = process.env.NEXT_PUBLIC_DERIV_APP_ID || '34dW9DIkkb8AWcPRK27Mh';
+const APP_ID = process.env.NEXT_PUBLIC_DERIV_APP_ID || '34GTu1GA03QOLDC07y8P9';
 const WS_URL = `wss://ws.derivws.com/websockets/v3?app_id=${APP_ID}`;
 
 let _logIdCounter = 0;

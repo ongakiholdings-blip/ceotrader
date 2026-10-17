@@ -4,7 +4,7 @@ import { pluginReact } from '@rsbuild/plugin-react';
 import { pluginSass } from '@rsbuild/plugin-sass';
 
 const isStaticBuild = process.env.NEXT_PUBLIC_APP_BUILD === 'true';
-const derivAppId = process.env.NEXT_PUBLIC_DERIV_APP_ID ?? '34dW9DIkkb8AWcPRK27Mh';
+const derivAppId = process.env.NEXT_PUBLIC_DERIV_APP_ID ?? '34GTu1GA03QOLDC07y8P9';
 
 // Resolve smartcharts from wherever the package actually lives so the asset
 // copy works both standalone and inside the monorepo (npm workspaces hoist the

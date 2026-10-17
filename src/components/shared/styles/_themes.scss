@@ -38,21 +38,22 @@
 
 
 
+
     /* Brand colors - dynamically generated from brand.config.json */
     --brand-white: #ffffff;
-    --brand-dark-grey: #0f172a;
-    --brand-red-coral: #f7c53b; /* legacy compatibility */
-    --brand-orange: #8b5cf6; /* legacy compatibility */
+    --brand-dark-grey: #08090b;
+    --brand-red-coral: #d6a72c; /* legacy compatibility */
+    --brand-orange: #25282e; /* legacy compatibility */
 
     /* Dynamic brand colors (set by brand configuration) */
-    --brand-primary: #f7c53b;
-    --brand-secondary: #64748b;
-    --brand-tertiary: #8b5cf6;
+    --brand-primary: #d6a72c;
+    --brand-secondary: #c9d1df;
+    --brand-tertiary: #25282e;
     --brand-success: #10b981;
     --brand-danger: #ef4444;
-    --brand-warning: #f59e0b;
-    --brand-info: #0ea5e9;
-    --brand-neutral: #6b7280;
+    --brand-warning: #d6a72c;
+    --brand-info: #c9d1df;
+    --brand-neutral: #8a909a;
 
     /* Brand typography - dynamically generated from brand.config.json */
     --brand-font-primary: Inter;
@@ -68,51 +69,50 @@
     --tw-border-opacity: 1;
 
     .theme--light {
-        // ─── DBOTPULSE Fusion Light Theme ────────────────────────────────
-        // Gold (premium) × Cyan-Blue (normal) = Warm ivory backgrounds,
-        // deep navy text, gold actions, cyan interactive accents.
+        // ─── CEOTRADER Gold and Silver Theme ────────────────────────────
+        // Warm metallic accents on clean neutral surfaces.
         // ─────────────────────────────────────────────────────────────────
 
         // Brand overrides for light mode
-        --brand-secondary: #06b6d4;   // cyan replaces slate as the accent
+        --brand-secondary: #c9d1df;
 
-        // General — ivory backgrounds with cool-blue section tint
-        --general-main-1: #fefef9;
-        --general-main-2: #fefef9;
-        --general-main-3: #1e2d5a;
-        --general-main-4: rgb(254 254 249 / 70%);
-        --general-section-1: #eef2ff;
-        --general-section-2: #eef2ff;
-        --general-section-3: #f8f9ff;
-        --general-section-4: #f3f6ff;
-        --general-section-5: #eef2ff;
-        --general-section-6: #eef2ff;
-        --general-disabled: #e2e6f0;
-        --general-hover: #e5eaf8;
-        --general-active: #d8e0f5;
+        // General — soft neutral backgrounds with silver section contrast
+        --general-main-1: #f7f7f5;
+        --general-main-2: #f7f7f5;
+        --general-main-3: #25282e;
+        --general-main-4: rgb(247 247 245 / 70%);
+        --general-section-1: #e8e8e5;
+        --general-section-2: #e8e8e5;
+        --general-section-3: #f1f1ef;
+        --general-section-4: #ebebe9;
+        --general-section-5: #e8e8e5;
+        --general-section-6: #e8e8e5;
+        --general-disabled: #d4d5d4;
+        --general-hover: #e4e3df;
+        --general-active: #d9d6cc;
 
-        // Icons and Texts — deep navy palette
-        --text-general: #1a2340;
-        --text-primary: #3d4f80;
-        --text-less-prominent: #4a5a8a;
-        --text-prominent: #0d1426;
-        --text-disabled: #8a9bbf;
-        --text-disabled-1: #b0bbcf;
+        // Icons and Texts — charcoal palette
+        --text-general: #25282e;
+        --text-primary: #62666e;
+        --text-less-prominent: #62666e;
+        --text-prominent: #111216;
+        --text-disabled: #8a909a;
+        --text-disabled-1: #aeb4be;
         --text-loss-danger: #{constants.$color-red-1};
         --text-profit-success: #{constants.$color-green-1};
-        --text-warning: #f7c53b;
+        --text-warning: #d6a72c;
         --text-red: #{constants.$color-red};
         --text-green: #{constants.$color-green-6};
-        --text-blue: #06b6d4;
-        --text-info-blue: #06b6d4;
-        --text-info-blue-background: #e0f9ff;
-        --text-colored-background: #fefef9;
-        --icon-light-background: #3d4f80;
-        --icon-dark-background: #fefef9;
-        --icon-grey-background: #eef2ff;
-        --icon-black-plus: #1a2340;
-        --text-status-info-blue: #06b6d4;
-        --text-hint: #1a2340;
+        --text-blue: #8a909a;
+        --text-info-blue: #8a909a;
+        --text-info-blue-background: #e8e8e5;
+        --text-colored-background: #f7f7f5;
+        --icon-light-background: #62666e;
+        --icon-dark-background: #f7f7f5;
+        --icon-grey-background: #e8e8e5;
+        --icon-black-plus: #25282e;
+        --text-status-info-blue: #8a909a;
+        --text-hint: #25282e;
 
         // Purchase
         --purchase-main-1: #{constants.$color-green-1};
@@ -122,66 +122,66 @@
         --purchase-disabled-main: #e2e6f0;
         --purchase-disabled-section: #e5eaf8;
 
-        // Buttons — gold primary, cyan toggles
-        --button-primary-default: #f7c53b;
-        --button-secondary-default: #3d4f80;
+        // Buttons — gold primary, silver toggles
+        --button-primary-default: #d6a72c;
+        --button-secondary-default: #41444a;
         --button-tertiary-default: transparent;
-        --button-primary-light-default: rgb(247 197 59 / 16%);
-        --button-primary-hover: #e5b22e;
-        --button-secondary-hover: rgb(30 45 90 / 8%);
-        --button-tertiary-hover: rgb(247 197 59 / 8%);
-        --button-primary-light-hover: rgb(247 197 59 / 24%);
-        --button-toggle-primary: #06b6d4;
-        --button-toggle-secondary: #d8e0f5;
-        --button-toggle-alternate: #fefef9;
+        --button-primary-light-default: rgb(214 167 44 / 16%);
+        --button-primary-hover: #bd9020;
+        --button-secondary-hover: rgb(37 40 46 / 8%);
+        --button-tertiary-hover: rgb(214 167 44 / 8%);
+        --button-primary-light-hover: rgb(214 167 44 / 24%);
+        --button-toggle-primary: #d6a72c;
+        --button-toggle-secondary: #d4d5d4;
+        --button-toggle-alternate: #f7f7f5;
 
         // Overlay
-        --overlay-outside-dialog: rgb(13 20 38 / 72%);
-        --overlay-inside-dialog: rgb(254 254 249 / 96%);
+        --overlay-outside-dialog: rgb(8 9 11 / 72%);
+        --overlay-inside-dialog: rgb(247 247 245 / 96%);
 
-        // Shadow — navy-tinted
-        --shadow-menu: rgb(13 20 38 / 16%);
-        --shadow-menu-2: rgb(13 20 38 / 16%);
-        --shadow-drop: rgb(13 20 38 / 8%);
-        --shadow-box: rgb(30 45 90 / 40%);
+        // Shadow — charcoal-tinted
+        --shadow-menu: rgb(8 9 11 / 16%);
+        --shadow-menu-2: rgb(8 9 11 / 16%);
+        --shadow-drop: rgb(8 9 11 / 8%);
+        --shadow-box: rgb(37 40 46 / 24%);
 
         // States
-        --state-normal: #fefef9;
-        --state-hover: #e5eaf8;
-        --state-active: #d8e0f5;
-        --state-disabled: #e2e6f0;
-        --checkbox-disabled-grey: #b0bbcf;
-        --sidebar-tab: #b0bbcf;
+        --state-normal: #f7f7f5;
+        --state-hover: #e4e3df;
+        --state-active: #d9d6cc;
+        --state-disabled: #d4d5d4;
+        --checkbox-disabled-grey: #aeb4be;
+        --sidebar-tab: #aeb4be;
 
-        // Border — blue-tinted grey
-        --border-normal: #cdd5ef;
-        --border-normal-1: #cdd5ef;
-        --border-normal-2: #cdd5ef;
-        --border-normal-3: #b0bbcf;
-        --border-hover: #3d4f80;
-        --border-hover-1: #1a2340;
-        --border-active: #06b6d4;
-        --border-disabled: #e2e6f0;
-        --border-divider: #eef2ff;
+        // Border — neutral silver
+        --border-normal: #d4d5d4;
+        --border-normal-1: #d4d5d4;
+        --border-normal-2: #d4d5d4;
+        --border-normal-3: #aeb4be;
+        --border-hover: #62666e;
+        --border-hover-1: #25282e;
+        --border-active: #d6a72c;
+        --border-disabled: #d4d5d4;
+        --border-divider: #e8e8e5;
 
         // Fill
-        --fill-normal: #fefef9;
-        --fill-normal-1: #eef2ff;
-        --fill-hover: #3d4f80;
-        --fill-active: #06b6d4;
-        --fill-disabled: #e2e6f0;
+        --fill-normal: #f7f7f5;
+        --fill-normal-1: #e8e8e5;
+        --fill-hover: #62666e;
+        --fill-active: #d6a72c;
+        --fill-disabled: #d4d5d4;
 
         // Status
-        --status-default: #e2e6f0;
-        --status-adjustment: #3d4f80;
+        --status-default: #d4d5d4;
+        --status-adjustment: #62666e;
         --status-danger: #{constants.$color-red-1};
         --status-success: #{constants.$color-green-1};
-        --status-warning: #f7c53b;
-        --status-warning-transparent: rgb(247 197 59 / 16%);
-        --status-transfer: #06b6d4;
-        --status-info: #06b6d4;
-        --status-colored-background: #fefef9;
-        --status-alert-background: rgb(247 197 59 / 16%);
+        --status-warning: #d6a72c;
+        --status-warning-transparent: rgb(214 167 44 / 16%);
+        --status-transfer: #8a909a;
+        --status-info: #8a909a;
+        --status-colored-background: #f7f7f5;
+        --status-alert-background: rgb(214 167 44 / 16%);
 
         // Dashboard
         --dashboard-swap-free: #{constants.$gradient-color-black-3};
@@ -189,37 +189,37 @@
 
         // Transparentize
         --transparent-success: rgb(75 180 179 / 92%);
-        --transparent-info: rgb(6 182 212 / 16%);
-        --transparent-hint: rgb(6 182 212 / 8%);
+        --transparent-info: rgb(138 144 154 / 16%);
+        --transparent-hint: rgb(138 144 154 / 8%);
         --transparent-danger: #{constants.$alpha-color-red-2};
         --transparent-correct-message: #{constants.$color-green-5};
         --transparent-fake-message: #{constants.$color-red-6};
 
         // Gradient
-        --gradient-success: linear-gradient(to top, #fefef9, rgb(75 180 179 / 16%));
-        --gradient-danger: linear-gradient(to top, #fefef9, rgb(236 63 63 / 16%));
-        --contract-gradient-danger: linear-gradient(to top, #fefef9 85%, rgb(236 63 63 / 16%));
-        --gradient-right-edge: linear-gradient(to right, rgb(254 254 249 / 0%) -5%, #fefef9 71%);
-        --gradient-blue: linear-gradient(90deg, #06b6d4 0%, #3b82f6 104.41%);
+        --gradient-success: linear-gradient(to top, #f7f7f5, rgb(75 180 179 / 16%));
+        --gradient-danger: linear-gradient(to top, #f7f7f5, rgb(236 63 63 / 16%));
+        --contract-gradient-danger: linear-gradient(to top, #f7f7f5 85%, rgb(236 63 63 / 16%));
+        --gradient-right-edge: linear-gradient(to right, rgb(247 247 245 / 0%) -5%, #f7f7f5 71%);
+        --gradient-blue: linear-gradient(90deg, #d6a72c 0%, #c9d1df 104.41%);
         --gradient-gold: #{constants.$gradient-color-gold};
         --gradient-green: #{constants.$gradient-color-green-4};
 
         // Badge
-        --badge-white: #fefef9;
-        --badge-blue: #06b6d4;
-        --badge-violet: #3b82f6;
+        --badge-white: #f7f7f5;
+        --badge-blue: #c9d1df;
+        --badge-violet: #8a909a;
         --badge-green: #{constants.$color-green-3};
 
         // TradersHub Banner
-        --traders-hub-banner-border-color: #cdd5ef;
+        --traders-hub-banner-border-color: #d4d5d4;
 
         // Demo view
-        --demo-text-color-1: #eef2ff;
-        --demo-text-color-2: #fefef9;
+        --demo-text-color-1: #e8e8e5;
+        --demo-text-color-2: #f7f7f5;
 
         // Header
-        --header-background-mt5: #e0f9ff;
-        --header-background-others: #{constants.$color-green-7};
+        --header-background-mt5: #e8e8e5;
+        --header-background-others: #25282e;
     }
 
     .theme--dark {
@@ -248,10 +248,11 @@
         --text-profit-success: #{constants.$color-green-3};
         --text-loss-danger: #{constants.$color-red-2};
         --text-red: #{constants.$color-red};
+        --text-blue: #c9d1df;
         --text-colored-background: #{constants.$color-white};
-        --text-info-blue: #{constants.$color-blue-6};
-        --text-info-blue-background: #{constants.$color-blue-7};
-        --text-status-info-blue: #{constants.$color-blue};
+        --text-info-blue: #c9d1df;
+        --text-info-blue-background: #25282e;
+        --text-status-info-blue: #c9d1df;
         --text-hint: #{constants.$color-grey};
         --icon-light-background: #{constants.$color-black-9};
         --icon-dark-background: #{constants.$color-white};
@@ -267,17 +268,18 @@
         --purchase-disabled-section: #{constants.$color-black};
 
         // Buttons
-        --button-primary-default: var(--brand-red-coral);
+        --brand-secondary: #c9d1df;
+        --button-primary-default: var(--brand-primary);
         --button-secondary-default: #{constants.$color-grey-7};
         --button-tertiary-default: transparent;
-        --button-primary-light-default: #{constants.$alpha-color-red-2};
-        --button-primary-hover: #{constants.$color-red-5};
+        --button-primary-light-default: rgb(214 167 44 / 16%);
+        --button-primary-hover: #bd9020;
         --button-secondary-hover: #{constants.$alpha-color-white-3};
-        --button-tertiary-hover: #{constants.$alpha-color-red-1};
-        --button-primary-light-hover: #{constants.$alpha-color-red-3};
-        --button-toggle-primary: #{constants.$color-blue-3};
-        --button-toggle-secondary: #{constants.$color-black-8};
-        --button-toggle-alternate: #{constants.$color-black-8};
+        --button-tertiary-hover: rgb(214 167 44 / 8%);
+        --button-primary-light-hover: rgb(214 167 44 / 24%);
+        --button-toggle-primary: var(--brand-primary);
+        --button-toggle-secondary: #{constants.$color-grey-7};
+        --button-toggle-alternate: #{constants.$color-grey-7};
         --button-get-started-bg: #{constants.$color-white};
 
         // Overlay
@@ -305,7 +307,7 @@
         --border-normal-3: #{constants.$color-grey-7};
         --border-hover: #{constants.$color-grey-7};
         --border-hover-1: #{constants.$color-black-9};
-        --border-active: var(--brand-secondary);
+        --border-active: var(--brand-primary);
         --border-disabled: #{constants.$color-black-4};
         --border-divider: #{constants.$color-grey-13};
 
@@ -313,7 +315,7 @@
         --fill-normal: #{constants.$color-black};
         --fill-normal-1: #{constants.$color-black-1};
         --fill-hover: #{constants.$color-grey-7};
-        --fill-active: var(--brand-secondary);
+        --fill-active: var(--brand-primary);
         --fill-disabled: #{constants.$color-black-4};
 
         // Status
@@ -323,8 +325,8 @@
         --status-warning: #{constants.$color-yellow};
         --status-warning-transparent: #{constants.$alpha-color-yellow-1};
         --status-success: #{constants.$color-green-3};
-        --status-transfer: #{constants.$color-orange};
-        --status-info: #{constants.$color-blue};
+        --status-transfer: #c9d1df;
+        --status-info: #c9d1df;
         --status-colored-background: #{constants.$color-white};
         --status-alert-background: #{constants.$color-yellow-3};
 
@@ -341,14 +343,14 @@
         --gradient-danger: #{constants.$gradient-color-red-2};
         --contract-gradient-danger: #{constants.$contract-gradient-color-red-2};
         --gradient-right-edge: #{constants.$gradient-color-black};
-        --gradient-blue: #{constants.$gradient-color-blue-5};
+        --gradient-blue: linear-gradient(90deg, #d6a72c 0%, #c9d1df 100%);
         --gradient-gold: #{constants.$gradient-color-gold};
         --gradient-green: #{constants.$gradient-color-green-4};
 
         // Badge
         --badge-white: #{constants.$color-white};
-        --badge-blue: #{constants.$color-blue-4};
-        --badge-violet: #{constants.$color-blue-2};
+        --badge-blue: #c9d1df;
+        --badge-violet: #8a909a;
         --badge-green: #{constants.$color-green-3};
 
         // TradersHub Banner
@@ -360,6 +362,6 @@
 
         // Header
         --header-background-mt5: #{constants.$color-blue-8};
-        --header-background-others: #{constants.$color-green-7};
+        --header-background-others: #111216;
     }
 }

@@ -1,33 +1,33 @@
 {
-    "brand_name": "DBOTPULSE",
-    "brand_domain": "dbotpulse.site",
+    "brand_name": "CEOTRADER",
+    "brand_domain": "ceotraders.site",
     "brand_hostname": {
-        "staging": "staging.dbotpulse.site",
-        "production": "dbotpulse.site"
+        "staging": "staging.ceotraders.site",
+        "production": "ceotraders.site"
     },
-    "domain_name": "dbotpulse.site",
+    "domain_name": "ceotraders.site",
     "colors": {
-        "primary": "#f7c53b",
-        "secondary": "#64748b",
-        "tertiary": "#8b5cf6",
+        "primary": "#d6a72c",
+        "secondary": "#c9d1df",
+        "tertiary": "#25282e",
         "success": "#10b981",
         "danger": "#ef4444",
-        "warning": "#f59e0b",
-        "info": "#0ea5e9",
-        "neutral": "#6b7280",
-        "black": "#0f172a",
+        "warning": "#d6a72c",
+        "info": "#c9d1df",
+        "neutral": "#8a909a",
+        "black": "#08090b",
         "white": "#ffffff",
         "grey": {
-            "50": "#f8fafc",
-            "100": "#f1f5f9",
-            "200": "#e2e8f0",
-            "300": "#cbd5e1",
-            "400": "#94a3b8",
-            "500": "#64748b",
-            "600": "#475569",
-            "700": "#334155",
-            "800": "#1e293b",
-            "900": "#0f172a"
+            "50": "#f7f7f5",
+            "100": "#e8e8e5",
+            "200": "#d4d5d4",
+            "300": "#c9d1df",
+            "400": "#aeb4be",
+            "500": "#8a909a",
+            "600": "#62666e",
+            "700": "#41444a",
+            "800": "#25282e",
+            "900": "#111216"
         }
     },
     "typography": {
@@ -79,17 +79,17 @@
         "css_variable_prefix": "--brand"
     },
     "platform": {
-        "name": "DBOTPULSE",
+        "name": "CEOTRADER",
         "footer": {
             "enable_language_settings": false,
             "enable_theme_toggle": true
         },
         "hostname": {
             "production": {
-                "com": "dbotpulse.site"
+                "com": "ceotraders.site"
             },
             "staging": {
-                "com": "staging.dbotpulse.site"
+                "com": "staging.ceotraders.site"
             }
         },
         "auth2_url": {

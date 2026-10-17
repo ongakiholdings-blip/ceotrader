@@ -225,27 +225,27 @@
         background:
             linear-gradient(145deg, rgb(0 29 74 / 98%), rgb(0 69 103 / 98%)),
             #001d4a;
-        border-bottom: 1px solid rgb(6 182 212 / 48%);
+        border-bottom: 1px solid rgb(214 167 44 / 48%);
         box-shadow:
             0 0.55rem 1.2rem rgb(0 0 0 / 22%),
-            inset 0 -1px 0 rgb(224 242 254 / 16%);
+            inset 0 -1px 0 rgb(201 209 223 / 16%);
     }
 
     .tutorials-page__search {
         width: 100%;
         height: 2.35rem;
         box-sizing: border-box;
-        border-color: rgb(224 242 254 / 28%);
+        border-color: rgb(201 209 223 / 28%);
         border-radius: 0.7rem;
         background: rgb(0 29 74 / 72%);
         color: #bae6fd;
 
         input {
-            color: #e0f2fe;
+            color: #f7f7f5;
             font-size: 0.8rem;
 
             &::placeholder {
-                color: rgb(224 242 254 / 68%);
+                color: rgb(201 209 223 / 68%);
             }
         }
     }
@@ -267,7 +267,7 @@
         width: auto;
         min-height: 2.15rem;
         padding: 0.55rem 0.8rem;
-        border: 1px solid rgb(224 242 254 / 18%);
+        border: 1px solid rgb(201 209 223 / 18%);
         border-radius: 0.6rem;
         background: rgb(0 29 74 / 42%);
         color: #bae6fd;
@@ -276,10 +276,10 @@
         white-space: nowrap;
 
         &--active {
-            border-color: rgb(224 242 254 / 58%);
-            background: linear-gradient(110deg, #005d82, #06b6d4);
+            border-color: rgb(201 209 223 / 58%);
+            background: linear-gradient(110deg, #005d82, #d6a72c);
             color: #fff;
-            box-shadow: 0 0 1rem rgb(6 182 212 / 30%);
+            box-shadow: 0 0 1rem rgb(214 167 44 / 30%);
         }
     }
 
@@ -404,7 +404,7 @@
     &__search {
         width: 100%;
         box-sizing: border-box;
-        border-color: rgb(224 242 254 / 45%);
+        border-color: rgb(201 209 223 / 45%);
         background: rgb(255 255 255 / 94%) !important;
     }
 
@@ -422,7 +422,7 @@
         width: auto;
         min-height: 2.4rem;
         padding: 0.55rem 1rem;
-        border: 1px solid rgb(224 242 254 / 28%);
+        border: 1px solid rgb(201 209 223 / 28%);
         border-radius: 999px;
         background: rgb(15 23 42 / 44%);
         color: #e2e8f0;
@@ -434,7 +434,7 @@
             border-color: #67e8f9;
             background: #0e7490;
             color: #fff;
-            box-shadow: 0 0 1rem rgb(6 182 212 / 22%);
+            box-shadow: 0 0 1rem rgb(214 167 44 / 22%);
         }
     }
 

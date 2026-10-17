@@ -83,14 +83,14 @@
 @keyframes normal-pulse {
     0%, 100% {
         box-shadow:
-            0 0 0 0 rgb(59 130 246 / 0%),
-            0 0 18px 2px rgb(6 182 212 / 8%),
+            0 0 0 0 rgb(214 167 44 / 0%),
+            0 0 18px 2px rgb(214 167 44 / 8%),
             0 4px 20px rgb(0 0 0 / 50%);
     }
     50% {
         box-shadow:
-            0 0 0 5px rgb(59 130 246 / 10%),
-            0 0 36px 8px rgb(6 182 212 / 18%),
+            0 0 0 5px rgb(214 167 44 / 10%),
+            0 0 36px 8px rgb(214 167 44 / 18%),
             0 10px 36px rgb(0 0 0 / 60%);
     }
 }
@@ -163,8 +163,8 @@
 }
 
 @keyframes gold-pulse {
-    0%, 100% { box-shadow: 0 0 0 0 rgb(247 197 59 / 0%), 0 4px 24px rgb(0 0 0 / 18%); }
-    50% { box-shadow: 0 0 0 4px rgb(247 197 59 / 22%), 0 8px 32px rgb(247 197 59 / 16%); }
+    0%, 100% { box-shadow: 0 0 0 0 rgb(214 167 44 / 0%), 0 4px 24px rgb(0 0 0 / 18%); }
+    50% { box-shadow: 0 0 0 4px rgb(214 167 44 / 22%), 0 8px 32px rgb(214 167 44 / 16%); }
 }
 
 @keyframes card-shine {
@@ -284,7 +284,7 @@
         font-size: 2.4rem;
         font-weight: 800;
         margin: 0 0 0.8rem;
-        background: linear-gradient(90deg, #f7c53b 0%, #ffe082 30%, #f7a800 60%, #f7c53b 100%);
+        background: linear-gradient(90deg, #d6a72c 0%, #ffe082 30%, #f7a800 60%, #d6a72c 100%);
         background-size: 200% auto;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -336,9 +336,9 @@
         }
 
         &--active {
-            background: linear-gradient(135deg, rgb(247 197 59 / 28%), rgb(59 130 246 / 25%));
-            border-color: #f7c53b;
-            box-shadow: 0 0 1rem rgb(247 197 59 / 25%), inset 0 1px rgb(255 255 255 / 20%);
+            background: linear-gradient(135deg, rgb(214 167 44 / 28%), rgb(214 167 44 / 25%));
+            border-color: #d6a72c;
+            box-shadow: 0 0 1rem rgb(214 167 44 / 25%), inset 0 1px rgb(255 255 255 / 20%);
             color: #fff;
         }
 
@@ -379,9 +379,9 @@
         &--new-bots {
             &.free-bots__mini-tab--active {
                 background: linear-gradient(135deg, rgb(56 189 248 / 22%), rgb(99 102 241 / 24%));
-                border-color: #38bdf8;
+                border-color: #eed58d;
                 box-shadow: 0 0 1rem rgb(56 189 248 / 25%), inset 0 1px rgb(255 255 255 / 20%);
-                color: #e0f2fe;
+                color: #f7f7f5;
             }
         }
     }

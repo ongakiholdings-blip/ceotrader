@@ -1,13 +1,13 @@
-@keyframes logo-cyan-shimmer {
+@keyframes logo-gold-shimmer {
     0%   { background-position: 0%   50%; }
     50%  { background-position: 100% 50%; }
     100% { background-position: 0%   50%; }
 }
 
 @keyframes logo-pulse-ring {
-    0%   { box-shadow: 0 0 0 0   rgb(6 182 212 / 45%), 0 0 12px rgb(6 182 212 / 20%); }
-    70%  { box-shadow: 0 0 0 8px rgb(6 182 212 / 0%),  0 0 20px rgb(6 182 212 / 30%); }
-    100% { box-shadow: 0 0 0 0   rgb(6 182 212 / 0%),  0 0 12px rgb(6 182 212 / 20%); }
+    0%   { box-shadow: 0 0 0 0   rgb(214 167 44 / 45%), 0 0 12px rgb(214 167 44 / 20%); }
+    70%  { box-shadow: 0 0 0 8px rgb(214 167 44 / 0%),  0 0 20px rgb(214 167 44 / 30%); }
+    100% { box-shadow: 0 0 0 0   rgb(214 167 44 / 0%),  0 0 12px rgb(214 167 44 / 20%); }
 }
 
 @keyframes logo-float {
@@ -21,8 +21,8 @@
 }
 
 @keyframes logo-badge-spin-glow {
-    0%, 100% { box-shadow: 0 0 6px  rgb(6 182 212 / 50%), inset 0 0 6px  rgb(6 182 212 / 20%); }
-    50%       { box-shadow: 0 0 18px rgb(6 182 212 / 80%), inset 0 0 10px rgb(6 182 212 / 30%); }
+    0%, 100% { box-shadow: 0 0 6px  rgb(214 167 44 / 50%), inset 0 0 6px  rgb(214 167 44 / 20%); }
+    50%       { box-shadow: 0 0 18px rgb(214 167 44 / 80%), inset 0 0 10px rgb(214 167 44 / 30%); }
 }
 
 @keyframes text-char-flicker {
@@ -73,7 +73,7 @@
             left: 0;
             width: 40%;
             height: 100%;
-            background: linear-gradient(105deg, transparent 0%, rgb(224 242 254 / 35%) 50%, transparent 100%);
+            background: linear-gradient(105deg, transparent 0%, rgb(201 209 223 / 35%) 50%, transparent 100%);
             transform: translateX(-120%) skewX(-15deg);
             pointer-events: none;
         }
@@ -88,11 +88,11 @@
         max-width: 160px;
         object-fit: contain;
         border-radius: 10px;
-        filter: drop-shadow(0 0 6px rgb(6 182 212 / 40%));
+        filter: drop-shadow(0 0 6px rgb(214 167 44 / 40%));
         transition: filter 0.3s ease;
 
         &:hover {
-            filter: drop-shadow(0 0 14px rgb(6 182 212 / 70%));
+            filter: drop-shadow(0 0 14px rgb(214 167 44 / 70%));
         }
     }
 
@@ -102,14 +102,14 @@
         justify-content: center;
         flex: none;
         border-radius: 10px;
-        background: linear-gradient(135deg, #0369a1 0%, #06b6d4 50%, #38bdf8 100%);
-        color: #e0f2fe;
+        background: linear-gradient(135deg, #9a741c 0%, #d6a72c 55%, #eed58d 100%);
+        color: #111216;
         font-weight: 900;
         font-size: 1.6rem;
         line-height: 1;
         animation: logo-badge-spin-glow 2.5s ease-in-out infinite;
-        border: 2px solid rgb(6 182 212 / 50%);
-        text-shadow: 0 0 8px rgb(6 182 212 / 60%);
+        border: 2px solid rgb(214 167 44 / 50%);
+        text-shadow: 0 0 8px rgb(214 167 44 / 60%);
     }
 
     &__logo-text {
@@ -123,20 +123,20 @@
 
         background: linear-gradient(
             90deg,
-            #0369a1 0%,
-            #06b6d4 20%,
-            #38bdf8 40%,
-            #e0f2fe 50%,
-            #38bdf8 60%,
-            #06b6d4 80%,
-            #0369a1 100%
+            #8f6a18 0%,
+            #d6a72c 20%,
+            #eed58d 40%,
+            #f7f7f5 50%,
+            #eed58d 60%,
+            #d6a72c 80%,
+            #8f6a18 100%
         );
         background-size: 200% auto;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        animation: logo-cyan-shimmer 2.8s linear infinite;
-        filter: drop-shadow(0 0 8px rgb(6 182 212 / 60%));
+        animation: logo-gold-shimmer 2.8s linear infinite;
+        filter: drop-shadow(0 0 8px rgb(214 167 44 / 45%));
     }
 
     &__logo-copy {
@@ -151,7 +151,7 @@
     &__logo-powered-by {
         display: block;
         margin-top: 0.15rem;
-        color: #c4e8ff;
+        color: #c9d1df;
         font-size: 0.72rem;
         font-weight: 700;
         letter-spacing: 0.08em;
@@ -160,7 +160,7 @@
         white-space: nowrap;
 
         strong {
-            color: #ff6868;
+            color: #d6a72c;
             font-weight: 900;
         }
     }
@@ -168,7 +168,7 @@
     &__tagline {
         display: block;
         margin-top: 0.12rem;
-        color: #a7f3d0;
+        color: #c9d1df;
         font-size: 0.54rem;
         font-weight: 700;
         letter-spacing: 0.035em;

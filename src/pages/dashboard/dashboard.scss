@@ -29,8 +29,8 @@
     .tab__dashboard {
         .tab__dashboard__content {
             background:
-                linear-gradient(180deg, rgb(4 12 24 / 74%) 0%, rgb(4 10 20 / 84%) 55%, rgb(2 6 14 / 92%) 100%),
-                url('../../assets/green-abstract-gradient-background.jpg') !important;
+                radial-gradient(ellipse at 50% 0%, rgb(214 167 44 / 10%), transparent 45%),
+                linear-gradient(180deg, rgb(8 9 11 / 92%) 0%, rgb(17 18 22 / 96%) 55%, rgb(8 9 11 / 98%) 100%) !important;
             background-attachment: local;
             background-size: cover;
             background-position: center;
@@ -42,8 +42,8 @@
 
             @include mobile-or-tablet-screen {
                 background-image:
-                    linear-gradient(180deg, rgb(4 12 24 / 78%) 0%, rgb(4 10 20 / 88%) 55%, rgb(2 6 14 / 94%) 100%),
-                    url('../../assets/green-abstract-gradient-background.jpg') !important;
+                    radial-gradient(ellipse at 50% 0%, rgb(214 167 44 / 10%), transparent 45%),
+                    linear-gradient(180deg, rgb(8 9 11 / 94%) 0%, rgb(17 18 22 / 97%) 55%, rgb(8 9 11 / 99%) 100%) !important;
             }
 
             &::before {
@@ -63,7 +63,7 @@
                         transparent 0 22%,
                         rgb(255 255 255 / 18%) 23% 24%,
                         transparent 25% 37%,
-                        rgb(255 204 59 / 12%) 38% 39%,
+                        rgb(214 167 44 / 12%) 38% 39%,
                         transparent 40%
                     );
                 border-top-color: rgb(255 255 255 / 32%);
@@ -72,59 +72,58 @@
         }
 
         .tab__dashboard__header {
-            background: rgb(255 255 255 / 55%);
-            border: 1px solid rgb(255 255 255 / 48%);
+            background: rgb(37 40 46 / 76%);
+            border: 1px solid rgb(201 209 223 / 24%);
             border-radius: 1.4rem;
-            box-shadow: inset 0 1px rgb(255 255 255 / 55%), 0 0.8rem 2rem rgb(5 53 91 / 12%);
-            color: #061c3d;
+            box-shadow: inset 0 1px rgb(201 209 223 / 12%), 0 0.8rem 2rem rgb(0 0 0 / 32%);
+            color: #e8e8e5;
             backdrop-filter: blur(16px);
 
             .title,
             .subtitle {
-                color: #061c3d !important;
-                -webkit-text-fill-color: #061c3d !important;
-                text-shadow: 0 1px 2px rgb(255 255 255 / 45%) !important;
+                color: #e8e8e5 !important;
+                -webkit-text-fill-color: #e8e8e5 !important;
+                text-shadow: 0 1px 2px rgb(0 0 0 / 45%) !important;
             }
         }
 
         .tab__dashboard__table__block,
         .feature-showcase__card {
-            background: linear-gradient(145deg, rgb(255 255 255 / 84%), rgb(255 255 255 / 55%)) !important;
-            border-color: rgb(255 255 255 / 72%) !important;
+            background: linear-gradient(145deg, rgb(37 40 46 / 92%), rgb(17 18 22 / 88%)) !important;
+            border-color: rgb(201 209 223 / 28%) !important;
             box-shadow:
-                0 1.2rem 2.8rem rgb(5 53 91 / 20%),
-                0 0 1.2rem rgb(49 212 205 / 20%),
-                inset 0 1px rgb(255 255 255 / 72%) !important;
+                0 1.2rem 2.8rem rgb(0 0 0 / 36%),
+                0 0 1.2rem rgb(214 167 44 / 20%),
+                inset 0 1px rgb(201 209 223 / 10%) !important;
             backdrop-filter: blur(18px);
 
             .dc-text,
             .feature-showcase__card-title {
-                color: #061c3d !important;
-                text-shadow: 0 1px 2px rgb(255 255 255 / 42%) !important;
+                color: #e8e8e5 !important;
+                text-shadow: 0 1px 2px rgb(0 0 0 / 42%) !important;
             }
         }
 
         .tab__dashboard__table__images,
         .feature-showcase__card-icon {
-            background: linear-gradient(145deg, rgb(255 204 59 / 90%), rgb(49 212 205 / 75%)) !important;
-            border-color: rgb(255 255 255 / 72%) !important;
-            box-shadow: 0 0 1.2rem rgb(49 212 205 / 35%), inset 0 1px rgb(255 255 255 / 75%) !important;
+            background: linear-gradient(145deg, rgb(214 167 44 / 90%), rgb(201 209 223 / 75%)) !important;
+            border-color: rgb(201 209 223 / 42%) !important;
+            box-shadow: 0 0 1.2rem rgb(214 167 44 / 24%), inset 0 1px rgb(247 247 245 / 32%) !important;
         }
     }
 
-    /* Free Bots normal-card template: deep blue water, cyan edge light and
-       animated liquid highlights for Dashboard actions. */
+    /* Gold-edged charcoal cards with subtle animated highlights. */
     .tab__dashboard__table__block {
         background:
-            radial-gradient(circle at 18% 18%, rgb(224 242 254 / 12%) 0 0.12rem, transparent 0.22rem),
-            radial-gradient(circle at 78% 28%, rgb(224 242 254 / 10%) 0 0.18rem, transparent 0.3rem),
-            linear-gradient(110deg, #001d4a 0%, #001d4a 50%, #005d82 50%, #004567 100%) !important;
+            radial-gradient(circle at 18% 18%, rgb(201 209 223 / 12%) 0 0.12rem, transparent 0.22rem),
+            radial-gradient(circle at 78% 28%, rgb(201 209 223 / 10%) 0 0.18rem, transparent 0.3rem),
+            linear-gradient(110deg, #111216 0%, #17191d 50%, #25282e 50%, #111216 100%) !important;
         background-size: 6rem 5rem, 9rem 7rem, 100% 100%;
         border: 1px solid transparent !important;
         box-shadow:
             0 0.9rem 2rem rgb(0 0 0 / 42%),
-            0 0 1.4rem rgb(6 182 212 / 18%),
-            inset 0 1px 0 rgb(224 242 254 / 18%) !important;
+            0 0 1.4rem rgb(214 167 44 / 18%),
+            inset 0 1px 0 rgb(201 209 223 / 18%) !important;
         overflow: hidden;
         position: relative;
         isolation: isolate;
@@ -133,13 +132,13 @@
         &::before {
             background: conic-gradient(
                 from 0deg,
-                #3b82f6 0deg,
-                #06b6d4 60deg,
-                #e0f2fe 120deg,
-                #06b6d4 180deg,
-                #3b82f6 240deg,
-                #0ea5e9 300deg,
-                #3b82f6 360deg
+                #8f6a18 0deg,
+                #d6a72c 60deg,
+                #c9d1df 120deg,
+                #d6a72c 180deg,
+                #8f6a18 240deg,
+                #eed58d 300deg,
+                #8f6a18 360deg
             ) !important;
             border-radius: inherit;
             content: '';
@@ -156,9 +155,9 @@
 
         &::after {
             background:
-                linear-gradient(180deg, rgb(224 242 254 / 22%), transparent 58%),
-                radial-gradient(ellipse at 50% 0%, rgb(224 242 254 / 36%), transparent 58%);
-            border-top: 2px solid rgb(224 242 254 / 48%);
+                linear-gradient(180deg, rgb(201 209 223 / 22%), transparent 58%),
+                radial-gradient(ellipse at 50% 0%, rgb(201 209 223 / 36%), transparent 58%);
+            border-top: 2px solid rgb(201 209 223 / 48%);
             border-radius: 50%;
             content: '';
             height: 48%;
@@ -186,27 +185,27 @@
             animation: none;
             transform: translateY(-0.35rem) scale(1.015);
             box-shadow:
-                0 0 0 3px rgb(59 130 246 / 18%),
-                0 0 2.8rem rgb(6 182 212 / 28%),
+                0 0 0 3px rgb(214 167 44 / 18%),
+                0 0 2.8rem rgb(214 167 44 / 28%),
                 0 1.2rem 3.2rem rgb(0 0 0 / 56%) !important;
         }
 
         .tab__dashboard__table__images {
-            background: linear-gradient(135deg, rgb(59 130 246 / 20%), rgb(6 182 212 / 14%)) !important;
-            border: 1px solid rgb(59 130 246 / 50%) !important;
-            box-shadow: 0 0 0 3px rgb(59 130 246 / 10%), 0 0 1.2rem rgb(6 182 212 / 18%) !important;
+            background: linear-gradient(135deg, rgb(214 167 44 / 20%), rgb(214 167 44 / 14%)) !important;
+            border: 1px solid rgb(214 167 44 / 50%) !important;
+            box-shadow: 0 0 0 3px rgb(214 167 44 / 10%), 0 0 1.2rem rgb(214 167 44 / 18%) !important;
         }
 
         .dc-text {
-            color: #e0f2fe !important;
+            color: #c9d1df !important;
             font-weight: 800 !important;
-            text-shadow: 0 0 0.5rem rgb(6 182 212 / 42%);
+            text-shadow: 0 0 0.5rem rgb(214 167 44 / 42%);
         }
     }
 
     @keyframes dashboard-normal-card-pulse {
-        0%, 100% { box-shadow: 0 0.9rem 2rem rgb(0 0 0 / 42%), 0 0 1.4rem rgb(6 182 212 / 18%), inset 0 1px 0 rgb(224 242 254 / 18%); }
-        50% { box-shadow: 0 1rem 2.2rem rgb(0 0 0 / 48%), 0 0 2rem rgb(6 182 212 / 30%), inset 0 1px 0 rgb(224 242 254 / 24%); }
+        0%, 100% { box-shadow: 0 0.9rem 2rem rgb(0 0 0 / 42%), 0 0 1.4rem rgb(214 167 44 / 18%), inset 0 1px 0 rgb(201 209 223 / 18%); }
+        50% { box-shadow: 0 1rem 2.2rem rgb(0 0 0 / 48%), 0 0 2rem rgb(214 167 44 / 30%), inset 0 1px 0 rgb(201 209 223 / 24%); }
     }
 
     @keyframes dashboard-normal-spin {
@@ -237,12 +236,12 @@
         &::before {
             animation: dashboard-liquid-drift 18s ease-in-out infinite;
             background:
-                radial-gradient(ellipse at 12% 18%, rgb(53 215 208 / 18%) 0 8%, transparent 32%),
-                radial-gradient(ellipse at 86% 10%, rgb(247 197 59 / 12%) 0 9%, transparent 30%),
-                radial-gradient(ellipse at 62% 84%, rgb(34 188 196 / 16%) 0 13%, transparent 38%),
-                radial-gradient(circle at 20% 72%, rgb(215 255 251 / 18%) 0 0.12rem, transparent 0.22rem),
-                radial-gradient(circle at 78% 64%, rgb(215 255 251 / 14%) 0 0.18rem, transparent 0.3rem),
-                linear-gradient(125deg, transparent 24%, rgb(53 215 208 / 8%) 47%, transparent 70%);
+                radial-gradient(ellipse at 12% 18%, rgb(214 167 44 / 18%) 0 8%, transparent 32%),
+                radial-gradient(ellipse at 86% 10%, rgb(214 167 44 / 12%) 0 9%, transparent 30%),
+                radial-gradient(ellipse at 62% 84%, rgb(201 209 223 / 16%) 0 13%, transparent 38%),
+                radial-gradient(circle at 20% 72%, rgb(201 209 223 / 18%) 0 0.12rem, transparent 0.22rem),
+                radial-gradient(circle at 78% 64%, rgb(201 209 223 / 14%) 0 0.18rem, transparent 0.3rem),
+                linear-gradient(125deg, transparent 24%, rgb(214 167 44 / 8%) 47%, transparent 70%);
             background-size: 72% 88%, 70% 76%, 84% 92%, 10rem 8rem, 14rem 11rem, 150% 150%;
             filter: blur(1.2rem) saturate(1.25);
             opacity: 0.95;
@@ -252,10 +251,10 @@
         &::after {
             animation: dashboard-liquid-wave 12s ease-in-out infinite;
             background:
-                linear-gradient(180deg, rgb(215 255 251 / 10%), transparent 68%),
-                radial-gradient(ellipse at 50% 12%, transparent 0 22%, rgb(53 215 208 / 12%) 23% 24%, transparent 25% 37%, rgb(247 197 59 / 7%) 38% 39%, transparent 40%);
+                linear-gradient(180deg, rgb(201 209 223 / 10%), transparent 68%),
+                radial-gradient(ellipse at 50% 12%, transparent 0 22%, rgb(214 167 44 / 12%) 23% 24%, transparent 25% 37%, rgb(214 167 44 / 7%) 38% 39%, transparent 40%);
             background-size: 100% 100%, 54rem 28rem;
-            border-top: 1px solid rgb(215 255 251 / 20%);
+            border-top: 1px solid rgb(201 209 223 / 20%);
             border-radius: 48% 52% 0 0 / 12% 18% 0 0;
             mix-blend-mode: screen;
             opacity: 0.75;
@@ -297,13 +296,13 @@
     @include mobile-or-tablet-screen {
         .tab__dashboard__content {
             background:
-                linear-gradient(rgb(3 24 26 / 86%), rgb(3 20 22 / 90%)),
-                url('../../assets/green-abstract-gradient-background.jpg') !important;
+                linear-gradient(rgb(8 9 11 / 86%), rgb(17 18 22 / 90%)),
+                linear-gradient(145deg, #08090b, #17191d) !important;
         }
 
         .tab__dashboard__header {
-            background: rgb(2 27 29 / 72%);
-            border: 1px solid rgb(53 215 208 / 28%);
+            background: rgb(17 18 22 / 72%);
+            border: 1px solid rgb(214 167 44 / 28%);
             border-radius: 1.2rem;
             margin: 0.2rem 0 1.4rem;
             padding: 1.4rem 1.2rem;
@@ -328,16 +327,16 @@
         }
 
         .tab__dashboard__table__block {
-            background: linear-gradient(145deg, #123f42 0%, #09292c 100%) !important;
-            border-color: #3bcfc8 !important;
+            background: linear-gradient(145deg, #25282e 0%, #111216 100%) !important;
+            border-color: #d6a72c !important;
             box-shadow:
                 0 0.7rem 1.6rem rgb(0 0 0 / 45%),
                 inset 0 1px 0 rgb(255 255 255 / 16%) !important;
             min-height: 12.5rem;
 
             .tab__dashboard__table__images {
-                background: linear-gradient(145deg, #e9fffd 0%, #b9f5ef 100%) !important;
-                border-color: #69e4dc !important;
+                background: linear-gradient(145deg, #c9d1df 0%, #aeb4be 100%) !important;
+                border-color: #d6a72c !important;
                 box-shadow: 0 0.5rem 1.2rem rgb(0 0 0 / 30%) !important;
             }
 
@@ -822,8 +821,8 @@
 }
 
 @keyframes gold-pulse-glow {
-    0%, 100% { box-shadow: 0 0 8px 2px rgb(6 182 212 / 25%), 0 0 24px 4px rgb(6 182 212 / 10%); }
-    50%       { box-shadow: 0 0 16px 6px rgb(6 182 212 / 50%), 0 0 48px 12px rgb(6 182 212 / 20%); }
+    0%, 100% { box-shadow: 0 0 8px 2px rgb(214 167 44 / 25%), 0 0 24px 4px rgb(214 167 44 / 10%); }
+    50%       { box-shadow: 0 0 16px 6px rgb(214 167 44 / 50%), 0 0 48px 12px rgb(214 167 44 / 20%); }
 }
 
 @keyframes gold-text-shine {
@@ -853,15 +852,15 @@
 .tab__dashboard__header .subtitle         { display: none !important; }
 
 /* ─────────────────────────────────────────────────────────────
-   LIGHT THEME — soft white + cyan/blue
+   LIGHT THEME — neutral silver and gold
    ───────────────────────────────────────────────────────────── */
 body.theme--light {
 
     /* Dashboard content area */
     .tab__dashboard__content {
         background:
-            linear-gradient(rgb(233 248 248 / 82%), rgb(226 244 244 / 86%)),
-            url('../../assets/green-abstract-gradient-background.jpg') !important;
+            linear-gradient(rgb(247 247 245 / 82%), rgb(232 232 229 / 86%)),
+            linear-gradient(145deg, #08090b, #17191d) !important;
         background-size: cover !important;
         background-position: center !important;
         position: relative;
@@ -871,8 +870,8 @@ body.theme--light {
             position: absolute;
             inset: 0;
             background-image:
-                linear-gradient(rgb(6 182 212 / 3%) 1px, transparent 1px),
-                linear-gradient(90deg, rgb(59 130 246 / 2%) 1px, transparent 1px);
+                linear-gradient(rgb(214 167 44 / 3%) 1px, transparent 1px),
+                linear-gradient(90deg, rgb(214 167 44 / 2%) 1px, transparent 1px);
             background-size: 48px 48px;
             pointer-events: none;
             z-index: 0;
@@ -886,14 +885,14 @@ body.theme--light {
         .title {
             background: linear-gradient(
                 90deg,
-                #0369a1 0%, #06b6d4 25%, #e0f2fe 50%, #06b6d4 75%, #0369a1 100%
+                #8f6a18 0%, #d6a72c 25%, #f7f7f5 50%, #d6a72c 75%, #8f6a18 100%
             );
             background-size: 300% auto;
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
             animation: gold-text-shine 4s linear infinite;
-            filter: drop-shadow(0 0 6px rgb(6 182 212 / 20%));
+            filter: drop-shadow(0 0 6px rgb(214 167 44 / 20%));
             font-weight: 900 !important;
             letter-spacing: 0.02em;
         }
@@ -907,11 +906,11 @@ body.theme--light {
     /* Action card icon boxes — light surface, cyan border + glow */
     .tab__dashboard__table__images {
         background: linear-gradient(145deg, #f0f9ff 0%, #e8f4ff 100%) !important;
-        border: 1.5px solid rgb(6 182 212 / 30%) !important;
+        border: 1.5px solid rgb(214 167 44 / 30%) !important;
         box-shadow:
-            0 0 0 1px rgb(6 182 212 / 6%) inset,
+            0 0 0 1px rgb(214 167 44 / 6%) inset,
             0 4px 20px rgb(3 105 161 / 8%),
-            0 0 8px rgb(6 182 212 / 6%) !important;
+            0 0 8px rgb(214 167 44 / 6%) !important;
         border-radius: 1.2rem !important;
         position: relative;
         overflow: hidden;
@@ -924,7 +923,7 @@ body.theme--light {
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(105deg, transparent 35%, rgb(6 182 212 / 8%) 50%, transparent 65%);
+            background: linear-gradient(105deg, transparent 35%, rgb(214 167 44 / 8%) 50%, transparent 65%);
             background-size: 200% 100%;
             animation: dash-cyan-shimmer 3s ease-in-out infinite;
             pointer-events: none;
@@ -933,21 +932,21 @@ body.theme--light {
 
         &:hover {
             transform: translateY(-4px) scale(1.03) !important;
-            border-color: rgb(6 182 212 / 65%) !important;
+            border-color: rgb(214 167 44 / 65%) !important;
             box-shadow:
-                0 0 0 2px rgb(6 182 212 / 12%) inset,
+                0 0 0 2px rgb(214 167 44 / 12%) inset,
                 0 8px 32px rgb(3 105 161 / 12%),
-                0 0 20px rgb(6 182 212 / 18%) !important;
+                0 0 20px rgb(214 167 44 / 18%) !important;
             cursor: pointer;
         }
 
         svg {
-            filter: drop-shadow(0 0 3px rgb(6 182 212 / 20%));
+            filter: drop-shadow(0 0 3px rgb(214 167 44 / 20%));
             transition: filter 0.3s ease, transform 0.3s ease;
         }
 
         &:hover svg {
-            filter: drop-shadow(0 0 8px rgb(6 182 212 / 45%)) brightness(1.05);
+            filter: drop-shadow(0 0 8px rgb(214 167 44 / 45%)) brightness(1.05);
             transform: scale(1.08);
         }
     }
@@ -962,16 +961,16 @@ body.theme--light {
         }
 
         &:hover .dc-text {
-            color: #06b6d4 !important;
-            text-shadow: 0 0 8px rgb(6 182 212 / 30%);
+            color: #d6a72c !important;
+            text-shadow: 0 0 8px rgb(214 167 44 / 30%);
         }
     }
 
     /* Announcements button — light, cyan border */
     .announcements__button {
         background: linear-gradient(135deg, #f0f9ff 0%, #e8f4ff 100%) !important;
-        border: 1.5px solid rgb(6 182 212 / 30%) !important;
-        box-shadow: 0 0 8px rgb(6 182 212 / 8%) !important;
+        border: 1.5px solid rgb(214 167 44 / 30%) !important;
+        box-shadow: 0 0 8px rgb(214 167 44 / 8%) !important;
         transition: all 0.25s ease !important;
         border-radius: 2.4rem !important;
 
@@ -979,9 +978,9 @@ body.theme--light {
         .dc-text  { color: #1a2340 !important; font-weight: 600 !important; }
 
         &:hover {
-            border-color: rgb(6 182 212 / 55%) !important;
-            box-shadow: 0 0 14px rgb(6 182 212 / 16%) !important;
-            background: linear-gradient(135deg, #e0f2fe 0%, #dbeafe 100%) !important;
+            border-color: rgb(214 167 44 / 55%) !important;
+            box-shadow: 0 0 14px rgb(214 167 44 / 16%) !important;
+            background: linear-gradient(135deg, #f7f7f5 0%, #dbeafe 100%) !important;
         }
     }
 
@@ -993,7 +992,7 @@ body.theme--light {
         }
 
         &__header {
-            border-bottom: 1px solid rgb(6 182 212 / 20%) !important;
+            border-bottom: 1px solid rgb(214 167 44 / 20%) !important;
 
             .dc-text {
                 color: #3d4f80 !important;
@@ -1005,11 +1004,11 @@ body.theme--light {
         }
 
         &__item {
-            border-bottom: 1px solid rgb(6 182 212 / 10%) !important;
+            border-bottom: 1px solid rgb(214 167 44 / 10%) !important;
             transition: background 0.2s ease;
 
             &:hover {
-                background: linear-gradient(90deg, rgb(6 182 212 / 5%) 0%, transparent 100%) !important;
+                background: linear-gradient(90deg, rgb(214 167 44 / 5%) 0%, transparent 100%) !important;
             }
 
             &__label .dc-text,
@@ -1024,8 +1023,8 @@ body.theme--light {
             }
 
             &__actions button:hover svg {
-                fill: #06b6d4 !important;
-                filter: drop-shadow(0 0 4px rgb(6 182 212 / 35%));
+                fill: #d6a72c !important;
+                filter: drop-shadow(0 0 4px rgb(214 167 44 / 35%));
             }
         }
     }
@@ -1033,30 +1032,30 @@ body.theme--light {
     /* User guide button — light, cyan border + icon */
     .user-guide__button {
         background: linear-gradient(135deg, #f0f9ff 0%, #e8f4ff 100%) !important;
-        border: 1.5px solid rgb(6 182 212 / 25%) !important;
-        box-shadow: 0 0 6px rgb(6 182 212 / 8%) !important;
+        border: 1.5px solid rgb(214 167 44 / 25%) !important;
+        box-shadow: 0 0 6px rgb(214 167 44 / 8%) !important;
         transition: all 0.25s ease !important;
 
-        svg      { fill: #06b6d4 !important; }
+        svg      { fill: #d6a72c !important; }
         .dc-text { color: #1a2340 !important; }
 
         &:hover {
-            border-color: rgb(6 182 212 / 50%) !important;
-            box-shadow: 0 0 12px rgb(6 182 212 / 18%) !important;
+            border-color: rgb(214 167 44 / 50%) !important;
+            box-shadow: 0 0 12px rgb(214 167 44 / 18%) !important;
         }
     }
 }
 
 /* ─────────────────────────────────────────────────────────────
-   DARK THEME — DBOTPULSE teal + gold
+   DARK THEME — CEOTRADER black, gold, and silver
    ───────────────────────────────────────────────────────────── */
 body.theme--dark {
 
     .tab__dashboard__content {
         background:
-            radial-gradient(ellipse at 30% 20%, rgb(32 212 212 / 8%) 0%, transparent 55%),
-            linear-gradient(rgb(6 20 20 / 62%), rgb(6 20 20 / 68%)),
-            url('../../assets/green-abstract-gradient-background.jpg') !important;
+            radial-gradient(ellipse at 30% 20%, rgb(214 167 44 / 8%) 0%, transparent 55%),
+            linear-gradient(rgb(8 9 11 / 62%), rgb(8 9 11 / 68%)),
+            linear-gradient(145deg, #08090b, #17191d) !important;
         background-size: cover !important;
         background-position: center !important;
         position: relative;
@@ -1066,7 +1065,7 @@ body.theme--dark {
             position: absolute;
             inset: 0;
             background-image:
-                linear-gradient(rgb(32 212 212 / 3%) 1px, transparent 1px),
+                linear-gradient(rgb(214 167 44 / 3%) 1px, transparent 1px),
                 linear-gradient(90deg, rgb(214 179 90 / 3%) 1px, transparent 1px);
             background-size: 48px 48px;
             pointer-events: none;
@@ -1087,7 +1086,7 @@ body.theme--dark {
             background-clip: text;
             -webkit-text-fill-color: transparent;
             animation: gold-text-shine 4s linear infinite;
-            filter: drop-shadow(0 0 8px rgb(32 212 212 / 35%));
+            filter: drop-shadow(0 0 8px rgb(214 167 44 / 35%));
             font-weight: 900 !important;
             letter-spacing: 0.02em;
         }
@@ -1095,17 +1094,17 @@ body.theme--dark {
         .subtitle {
             color: #a8dcd8 !important;
             font-weight: 600;
-            text-shadow: 0 1px 8px rgb(32 212 212 / 15%);
+            text-shadow: 0 1px 8px rgb(214 167 44 / 15%);
         }
     }
 
     .tab__dashboard__table__images {
         background: linear-gradient(145deg, rgb(18 42 44 / 85%) 0%, rgb(16 32 34 / 75%) 100%) !important;
-        border: 1.5px solid rgb(32 212 212 / 30%) !important;
+        border: 1.5px solid rgb(214 167 44 / 30%) !important;
         box-shadow:
-            0 0 0 1px rgb(32 212 212 / 8%) inset,
+            0 0 0 1px rgb(214 167 44 / 8%) inset,
             0 4px 20px rgb(0 0 0 / 35%),
-            0 0 8px rgb(32 212 212 / 8%) !important;
+            0 0 8px rgb(214 167 44 / 8%) !important;
         border-radius: 1.2rem !important;
         position: relative;
         overflow: hidden;
@@ -1118,7 +1117,7 @@ body.theme--dark {
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(105deg, transparent 35%, rgb(32 212 212 / 7%) 50%, transparent 65%);
+            background: linear-gradient(105deg, transparent 35%, rgb(214 167 44 / 7%) 50%, transparent 65%);
             background-size: 200% 100%;
             animation: dash-cyan-shimmer 3s ease-in-out infinite;
             pointer-events: none;
@@ -1129,15 +1128,15 @@ body.theme--dark {
             transform: translateY(-4px) scale(1.03) !important;
             border-color: rgb(214 179 90 / 60%) !important;
             box-shadow:
-                0 0 0 1px rgb(32 212 212 / 18%) inset,
+                0 0 0 1px rgb(214 167 44 / 18%) inset,
                 0 8px 32px rgb(0 0 0 / 45%),
-                0 0 16px rgb(32 212 212 / 25%),
+                0 0 16px rgb(214 167 44 / 25%),
                 0 0 32px rgb(214 179 90 / 15%) !important;
             cursor: pointer;
         }
 
         svg {
-            filter: drop-shadow(0 0 4px rgb(32 212 212 / 25%));
+            filter: drop-shadow(0 0 4px rgb(214 167 44 / 25%));
             transition: filter 0.3s ease, transform 0.3s ease;
         }
 
@@ -1151,21 +1150,21 @@ body.theme--dark {
         .dc-text {
             color: #a8dcd8 !important;
             font-weight: 700 !important;
-            text-shadow: 0 0 6px rgb(32 212 212 / 18%);
+            text-shadow: 0 0 6px rgb(214 167 44 / 18%);
             letter-spacing: 0.03em;
             transition: color 0.2s, text-shadow 0.2s;
         }
 
         &:hover .dc-text {
             color: #eafffe !important;
-            text-shadow: 0 0 10px rgb(32 212 212 / 45%);
+            text-shadow: 0 0 10px rgb(214 167 44 / 45%);
         }
     }
 
     .announcements__button {
         background: linear-gradient(135deg, rgb(18 42 44 / 70%) 0%, rgb(16 32 34 / 70%) 100%) !important;
-        border: 1.5px solid rgb(32 212 212 / 30%) !important;
-        box-shadow: 0 0 8px rgb(32 212 212 / 12%) !important;
+        border: 1.5px solid rgb(214 167 44 / 30%) !important;
+        box-shadow: 0 0 8px rgb(214 167 44 / 12%) !important;
         transition: all 0.25s ease !important;
         border-radius: 2.4rem !important;
 
@@ -1174,7 +1173,7 @@ body.theme--dark {
 
         &:hover {
             border-color: rgb(214 179 90 / 60%) !important;
-            box-shadow: 0 0 14px rgb(32 212 212 / 25%) !important;
+            box-shadow: 0 0 14px rgb(214 167 44 / 25%) !important;
             background: linear-gradient(135deg, rgb(26 56 58 / 80%) 0%, rgb(20 44 46 / 80%) 100%) !important;
         }
     }
@@ -1182,12 +1181,12 @@ body.theme--dark {
     .bot-list {
         &__title .dc-text {
             color: #8ae9e9 !important;
-            text-shadow: 0 0 6px rgb(32 212 212 / 25%);
+            text-shadow: 0 0 6px rgb(214 167 44 / 25%);
             font-weight: 800 !important;
         }
 
         &__header {
-            border-bottom: 1px solid rgb(32 212 212 / 22%) !important;
+            border-bottom: 1px solid rgb(214 167 44 / 22%) !important;
 
             .dc-text {
                 color: #a8dcd8 !important;
@@ -1199,11 +1198,11 @@ body.theme--dark {
         }
 
         &__item {
-            border-bottom: 1px solid rgb(32 212 212 / 10%) !important;
+            border-bottom: 1px solid rgb(214 167 44 / 10%) !important;
             transition: background 0.2s ease;
 
             &:hover {
-                background: linear-gradient(90deg, rgb(32 212 212 / 6%) 0%, transparent 100%) !important;
+                background: linear-gradient(90deg, rgb(214 167 44 / 6%) 0%, transparent 100%) !important;
             }
 
             &__label .dc-text,
@@ -1213,7 +1212,7 @@ body.theme--dark {
             }
 
             &__actions button svg {
-                fill: rgb(32 212 212 / 55%) !important;
+                fill: rgb(214 167 44 / 55%) !important;
                 transition: fill 0.2s;
             }
 
@@ -1226,8 +1225,8 @@ body.theme--dark {
 
     .user-guide__button {
         background: linear-gradient(135deg, rgb(18 42 44 / 70%) 0%, rgb(16 32 34 / 70%) 100%) !important;
-        border: 1.5px solid rgb(32 212 212 / 28%) !important;
-        box-shadow: 0 0 6px rgb(32 212 212 / 10%) !important;
+        border: 1.5px solid rgb(214 167 44 / 28%) !important;
+        box-shadow: 0 0 6px rgb(214 167 44 / 10%) !important;
         transition: all 0.25s ease !important;
 
         svg      { fill: #8ae9e9 !important; }
@@ -1235,7 +1234,7 @@ body.theme--dark {
 
         &:hover {
             border-color: rgb(214 179 90 / 55%) !important;
-            box-shadow: 0 0 12px rgb(32 212 212 / 25%) !important;
+            box-shadow: 0 0 12px rgb(214 167 44 / 25%) !important;
         }
     }
 }
@@ -1290,13 +1289,13 @@ body.theme--dark {
     max-width: 15rem;
     padding: 1.6rem 1rem 1.2rem !important;
     border-radius: 1.4rem;
-    background: linear-gradient(150deg, rgb(32 212 212 / 14%) 0%, rgb(255 255 255 / 6%) 100%);
-    border: 1.5px solid rgb(32 212 212 / 40%);
+    background: linear-gradient(150deg, rgb(214 167 44 / 14%) 0%, rgb(255 255 255 / 6%) 100%);
+    border: 1.5px solid rgb(214 167 44 / 40%);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
     box-shadow:
         0 8px 32px rgb(0 0 0 / 22%),
-        0 0 18px rgb(32 212 212 / 18%),
+        0 0 18px rgb(214 167 44 / 18%),
         inset 0 1px 0 rgb(255 255 255 / 14%);
     overflow: hidden;
     transition:
@@ -1331,7 +1330,7 @@ body.theme--dark {
         height: 3px;
         border-radius: 3px 3px 0 0;
         background: linear-gradient(90deg, transparent, #20d4d4, transparent);
-        box-shadow: 0 0 12px 2px rgb(32 212 212 / 55%);
+        box-shadow: 0 0 12px 2px rgb(214 167 44 / 55%);
     }
 
     &:nth-child(2)::after {
@@ -1346,10 +1345,10 @@ body.theme--dark {
 
     &:hover {
         transform: translateY(-6px) scale(1.03);
-        border-color: rgb(32 212 212 / 45%);
+        border-color: rgb(214 167 44 / 45%);
         box-shadow:
             0 14px 40px rgb(0 0 0 / 30%),
-            0 0 24px rgb(32 212 212 / 30%);
+            0 0 24px rgb(214 167 44 / 30%);
     }
 
     .tab__dashboard__table__images {
@@ -1366,7 +1365,7 @@ body.theme--light {
         box-shadow:
             0 10px 30px rgb(15 159 162 / 20%),
             0 0 0 1px rgb(255 255 255 / 80%) inset,
-            0 0 18px rgb(32 212 212 / 22%);
+            0 0 18px rgb(214 167 44 / 22%);
 
         &::before {
             background: linear-gradient(105deg, transparent 35%, rgb(15 159 162 / 8%) 50%, transparent 65%);
@@ -1384,7 +1383,7 @@ body.theme--light {
             border-color: #d6b35a;
             box-shadow:
                 0 16px 40px rgb(15 159 162 / 28%),
-                0 0 26px rgb(32 212 212 / 35%);
+                0 0 26px rgb(214 167 44 / 35%);
 
             .dc-text { color: #0f9fa2 !important; }
         }
@@ -1398,16 +1397,16 @@ body.theme--light {
     body.theme--dark .tab__dashboard__content,
     .tab__dashboard__content {
         background:
-            radial-gradient(ellipse 120% 60% at 50% -10%, rgb(32 212 212 / 12%) 0%, transparent 55%),
-            linear-gradient(rgb(5 18 17 / 55%), rgb(5 18 17 / 62%)),
-            url('../../assets/green-abstract-gradient-background.jpg') !important;
+            radial-gradient(ellipse 120% 60% at 50% -10%, rgb(214 167 44 / 12%) 0%, transparent 55%),
+            linear-gradient(rgb(17 18 22 / 55%), rgb(17 18 22 / 62%)),
+            linear-gradient(145deg, #08090b, #17191d) !important;
         background-size: cover !important;
         background-position: center top !important;
         padding: 1.6rem 1.2rem 2rem;
 
         &::before {
             background-image:
-                radial-gradient(circle, rgb(32 212 212 / 7%) 1px, transparent 1px) !important;
+                radial-gradient(circle, rgb(214 167 44 / 7%) 1px, transparent 1px) !important;
             background-size: 22px 22px !important;
         }
     }
@@ -1423,12 +1422,12 @@ body.theme--light {
             -webkit-background-clip: text !important;
             background-clip: text !important;
             -webkit-text-fill-color: transparent !important;
-            filter: drop-shadow(0 0 14px rgb(32 212 212 / 40%)) !important;
+            filter: drop-shadow(0 0 14px rgb(214 167 44 / 40%)) !important;
         }
 
         .subtitle {
             color: #8fd4cf !important;
-            text-shadow: 0 1px 10px rgb(32 212 212 / 20%);
+            text-shadow: 0 1px 10px rgb(214 167 44 / 20%);
         }
     }
 
@@ -1444,10 +1443,10 @@ body.theme--light {
             rgb(20 42 44 / 55%) 45%,
             rgb(8 20 22 / 70%) 100%
         ) !important;
-        border: 1.5px solid rgb(32 212 212 / 35%) !important;
+        border: 1.5px solid rgb(214 167 44 / 35%) !important;
         box-shadow:
             0 14px 34px rgb(0 0 0 / 40%),
-            0 0 22px rgb(32 212 212 / 18%),
+            0 0 22px rgb(214 167 44 / 18%),
             inset 0 1px 0 rgb(255 255 255 / 22%),
             inset 0 -12px 24px rgb(0 0 0 / 25%) !important;
 
@@ -1457,7 +1456,7 @@ body.theme--light {
 
         .tab__dashboard__table__images {
             background: linear-gradient(150deg, rgb(255 255 255 / 16%) 0%, rgb(20 42 44 / 60%) 100%) !important;
-            border: 1px solid rgb(32 212 212 / 40%) !important;
+            border: 1px solid rgb(214 167 44 / 40%) !important;
             box-shadow:
                 0 6px 16px rgb(0 0 0 / 35%),
                 inset 0 1px 0 rgb(255 255 255 / 24%) !important;
@@ -1466,7 +1465,7 @@ body.theme--light {
         .dc-text {
             color: #eafffe !important;
             font-weight: 800 !important;
-            text-shadow: 0 0 8px rgb(32 212 212 / 40%);
+            text-shadow: 0 0 8px rgb(214 167 44 / 40%);
         }
     }
 
@@ -1478,30 +1477,30 @@ body.theme--light {
             rgb(18 40 42 / 55%) 50%,
             rgb(7 18 20 / 70%) 100%
         ) !important;
-        border: 1.5px solid rgb(32 212 212 / 32%) !important;
+        border: 1.5px solid rgb(214 167 44 / 32%) !important;
         box-shadow:
             0 12px 28px rgb(0 0 0 / 38%),
-            0 0 18px rgb(32 212 212 / 16%),
+            0 0 18px rgb(214 167 44 / 16%),
             inset 0 1px 0 rgb(255 255 255 / 20%),
             inset 0 -10px 20px rgb(0 0 0 / 25%) !important;
 
         .feature-showcase__card-icon {
             background: linear-gradient(150deg, rgb(255 255 255 / 16%) 0%, rgb(18 40 42 / 60%) 100%);
-            border: 1px solid rgb(32 212 212 / 45%);
+            border: 1px solid rgb(214 167 44 / 45%);
             box-shadow:
                 0 4px 12px rgb(0 0 0 / 35%),
                 inset 0 1px 0 rgb(255 255 255 / 22%),
-                0 0 12px rgb(32 212 212 / 30%);
+                0 0 12px rgb(214 167 44 / 30%);
 
             svg {
                 fill: #9ff1ec;
-                filter: drop-shadow(0 0 8px rgb(32 212 212 / 80%));
+                filter: drop-shadow(0 0 8px rgb(214 167 44 / 80%));
             }
         }
 
         .feature-showcase__card-title {
             color: #eafffe !important;
-            text-shadow: 0 0 8px rgb(32 212 212 / 45%);
+            text-shadow: 0 0 8px rgb(214 167 44 / 45%);
         }
     }
 }

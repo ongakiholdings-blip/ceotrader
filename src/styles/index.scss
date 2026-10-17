@@ -8,11 +8,16 @@ body {
     background: var(--general-main-1);
 }
 
-// ── DBOTPULSE Fusion Light Theme — body-level canvas ──────────────────────────
-// Subtle 3-stop gradient: warm ivory (gold) → near-white → cool periwinkle (cyan)
-// Gives the whole page a premium-meets-tech feel without competing with content.
+// ── CEOTRADER neutral and metallic brand canvas ───────────────────────────────
 body.theme--light {
-    background: linear-gradient(145deg, #fffef2 0%, #fefefe 45%, #f0f4ff 100%) !important;
+    background: linear-gradient(145deg, #f7f7f5 0%, #f1f1ef 55%, #e8e8e5 100%) !important;
+    background-attachment: fixed !important;
+}
+
+body.theme--dark {
+    background:
+        radial-gradient(ellipse at 50% -15%, rgb(214 167 44 / 10%), transparent 48%),
+        linear-gradient(145deg, #08090b 0%, #111216 52%, #17191d 100%) !important;
     background-attachment: fixed !important;
 }
 

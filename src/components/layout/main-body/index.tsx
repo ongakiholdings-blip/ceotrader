@@ -8,7 +8,7 @@ type TMainBodyProps = {
 };
 
 const MainBody: React.FC<TMainBodyProps> = ({ children }) => {
-    const current_theme = localStorage.getItem('theme') ?? 'light';
+    const current_theme = localStorage.getItem('theme') ?? 'dark';
     const { ui } = useStore() ?? {
         ui: {
             setDevice: () => {},
@@ -20,13 +20,10 @@ const MainBody: React.FC<TMainBodyProps> = ({ children }) => {
     useEffect(() => {
         const body = document.querySelector('body');
         if (!body) return;
-        if (current_theme === 'light') {
-            body.classList.remove('theme--dark');
-            body.classList.add('theme--light');
-        } else {
-            body.classList.remove('theme--light');
-            body.classList.add('theme--dark');
-        }
+        document.documentElement.classList.remove('light', 'dark');
+        document.documentElement.classList.add(current_theme === 'light' ? 'light' : 'dark');
+        body.classList.remove('theme--light', 'theme--dark');
+        body.classList.add(current_theme === 'light' ? 'theme--light' : 'theme--dark');
     }, [current_theme]);
 
     useEffect(() => {

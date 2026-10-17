@@ -9,7 +9,7 @@ export function createDerivWsFeed(
 ) {
     const endpoint =
         opts.endpoint ||
-        `wss://ws.derivws.com/websockets/v3?app_id=${process.env.NEXT_PUBLIC_DERIV_APP_ID || '34dW9DIkkb8AWcPRK27Mh'}`;
+        `wss://ws.derivws.com/websockets/v3?app_id=${process.env.NEXT_PUBLIC_DERIV_APP_ID || '34GTu1GA03QOLDC07y8P9'}`;
     const reconnectBase = opts.reconnectMs || 1500;
 
     let ws: WebSocket | null = null;

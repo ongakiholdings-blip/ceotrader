@@ -169,7 +169,7 @@ const GuideContent = ({ guide_tab_content, video_tab_content, is_dialog_open }: 
                                                     lineHeight='s'
                                                     size={isDesktop ? 's' : 'xs'}
                                                 >
-                                                    DBOTPULSE YouTube Channel
+                                                    CEOTRADER YouTube Channel
                                                 </Text>
                                             </div>
                                         </div>
