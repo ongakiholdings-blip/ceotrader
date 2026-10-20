@@ -12,8 +12,6 @@ import { LabelPairedSearchSmRegularIcon } from '@deriv/quill-icons/LabelPaired';
 import { SOCIAL_URLS } from '@/constants/social-links';
 
 const DERIV_AFFILIATE_URL = 'https://t.deriv.link?t=DGSGSFMT3L38';
-const CONTACT_WHATSAPP_URL = 'https://wa.me/+254115335502';
-const CONTACT_TELEGRAM_URL = SOCIAL_URLS.telegram;
 
 type TTutorialsTab = {
     handleTabChange: (active_number: number) => void;
@@ -136,20 +134,12 @@ const TutorialsTab = observer(({ handleTabChange }: TTutorialsTab) => {
                                 Explore Deriv’s affiliate programme <span aria-hidden='true'>↗</span>
                             </a>
                             <a
-                                className='affiliate-hub__contact'
-                                href={CONTACT_WHATSAPP_URL}
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                Contact us
-                            </a>
-                            <a
                                 className='affiliate-hub__community'
-                                href={CONTACT_TELEGRAM_URL}
+                                href={SOCIAL_URLS.facebook}
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                Join the community
+                                Follow us on Facebook
                             </a>
                         </div>
                     </section>

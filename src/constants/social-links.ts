@@ -1,6 +1,5 @@
 export const SOCIAL_URLS = {
-    youtube: 'https://www.youtube.com/@dbotpulse',
-    instagram: 'https://www.instagram.com/dbotpulse?dlrf=eDE0Yzg3Z2swZHEz',
-    telegram: 'https://t.me/dbotpulse',
-    tiktok: 'https://tiktok.com/@dbotpulse',
+    youtube: 'https://youtube.com/@nickisaac2940?si=jRKGqT4tQFFtDBzX',
+    tiktok: 'https://www.tiktok.com/@nickisaac23?_r=1&_t=ZS-9AePz6BA0Vb',
+    facebook: 'https://www.facebook.com/share/1BwiqyQyUR/',
 } as const;
