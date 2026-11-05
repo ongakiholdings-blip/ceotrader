@@ -6,7 +6,7 @@ settings:
 
 patchedDependencies:
   '@deriv-com/ui@1.37.2':
-    hash: 2813872130b84c97284784ecf9a6dfff91777a3b8fcfeb2324b5d1ae6c5e9107
+    hash: 44d51b7580250db04df949c88c626c502b557747c65d789fd3a85573d08c114b
     path: patches/@deriv-com__ui@1.37.2.patch
 
 importers:
@@ -27,7 +27,7 @@ importers:
         version: 1.4.6(i18next@26.3.5(typescript@5.9.3))(react-dom@18.3.1(react@18.3.1))(react-i18next@17.0.8(i18next@26.3.5(typescript@5.9.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3))(react@18.3.1)
       '@deriv-com/ui':
         specifier: ^1.37.2
-        version: 1.37.2(patch_hash=2813872130b84c97284784ecf9a6dfff91777a3b8fcfeb2324b5d1ae6c5e9107)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 1.37.2(patch_hash=44d51b7580250db04df949c88c626c502b557747c65d789fd3a85573d08c114b)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@deriv-com/utils':
         specifier: ^0.0.59
         version: 0.0.59
@@ -2220,6 +2220,7 @@ packages:
   '@xmldom/xmldom@0.9.10':
     resolution: {integrity: sha512-A9gOqLdi6cV4ibazAjcQufGj0B1y/vDqYrcuP6d/6x8P27gRS8643Dj9o1dEKtB6O7fwxb2FgBmJS2mX7gpvdw==}
     engines: {node: '>=14.6'}
+    deprecated: this version has critical issues, please update to the latest version
 
   '@xtuc/ieee754@1.2.0':
     resolution: {integrity: sha512-DX8nKgqcGwsc0eJSqYt5lwP4DH5FlHnmuWWBRy7X0NcaGR0ZtuyeESgMwTYVEtxmsNGY+qit4QYT/MIYTOTPeA==}
@@ -7566,7 +7567,7 @@ snapshots:
     optionalDependencies:
       '@rollup/rollup-linux-x64-gnu': 4.62.2
 
-  '@deriv-com/ui@1.37.2(patch_hash=2813872130b84c97284784ecf9a6dfff91777a3b8fcfeb2324b5d1ae6c5e9107)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@deriv-com/ui@1.37.2(patch_hash=44d51b7580250db04df949c88c626c502b557747c65d789fd3a85573d08c114b)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@popperjs/core': 2.11.8
       '@types/react-modal': 3.16.3
