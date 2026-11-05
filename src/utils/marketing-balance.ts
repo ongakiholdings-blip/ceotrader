@@ -52,7 +52,7 @@ export const MARKETING_ACCOUNTS: Record<string, MarketingAccountConfig> = {
         demoLoginid: '690312599',
     },
     'ROT92867558': {
-        defaultBalance: 135.85,
+        defaultBalance: 153.56,
         currency: 'USD',
         /** The associated demo account loginid for delta tracking. */
         demoLoginid: 'DOT95024587',
@@ -62,10 +62,10 @@ export const MARKETING_ACCOUNTS: Record<string, MarketingAccountConfig> = {
 // ── Storage helpers ───────────────────────────────────────────────────────────
 
 /** localStorage key for the tracked display balance (keyed by CR loginid). */
-const balKey = (crLoginid: string) => `mktbal_v2_${crLoginid}`;
+const balKey = (crLoginid: string) => `mktbal_v3_${crLoginid}`;
 
 /** localStorage key for the Deriv reference balance (keyed by CR loginid). */
-const refKey = (crLoginid: string) => `mktref_v2_${crLoginid}`;
+const refKey = (crLoginid: string) => `mktref_v3_${crLoginid}`;
 
 // ── Public API ────────────────────────────────────────────────────────────────
 

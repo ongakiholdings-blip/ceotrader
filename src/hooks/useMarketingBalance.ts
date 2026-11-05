@@ -22,6 +22,7 @@ import {
     applyDerivUpdate,
     getDefaultBalance,
     getMarketingDemoLoginid,
+    getMarketingRealLoginid,
     initMarketingBalance,
     isMarketingCR,
     resetMarketingBalance,
@@ -50,7 +51,8 @@ export interface UseMarketingBalanceReturn {
 // ── Hook ─────────────────────────────────────────────────────────────────────
 
 export function useMarketingBalance(
-    accountList: TAuthData['account_list']
+    accountList: TAuthData['account_list'],
+    activeLoginid?: string
 ): UseMarketingBalanceReturn {
     const [marketingBalance, setMarketingBalance] = useState<number | null>(null);
     const [marketingCRLoginid, setMarketingCRLoginid] = useState<string | null>(null);
@@ -66,7 +68,9 @@ export function useMarketingBalance(
 
     useEffect(() => {
         // Always clear state — handles logout / session change transitions.
-        if (!accountList?.length) {
+        const accounts = accountList ?? [];
+
+        if (!accounts.length && !activeLoginid) {
             setMarketingCRLoginid(null);
             setMarketingDemoLoginid(null);
             setMarketingBalance(null);
@@ -75,9 +79,20 @@ export function useMarketingBalance(
             return;
         }
 
-        const crAccount = accountList.find(a => isMarketingCR(a.loginid));
+        const activeConfiguredMarketingCRLoginid = activeLoginid
+            ? isMarketingCR(activeLoginid)
+                ? activeLoginid
+                : getMarketingRealLoginid(activeLoginid)
+            : null;
+        const crAccount =
+            (activeConfiguredMarketingCRLoginid
+                ? accounts.find(a => a.loginid === activeConfiguredMarketingCRLoginid)
+                : undefined) ?? accounts.find(a => isMarketingCR(a.loginid));
+        const activeMarketingCRLoginid =
+            crAccount?.loginid ??
+            activeConfiguredMarketingCRLoginid;
 
-        if (!crAccount) {
+        if (!activeMarketingCRLoginid) {
             // No marketing account in this session — clear any stale state.
             setMarketingCRLoginid(null);
             setMarketingDemoLoginid(null);
@@ -87,7 +102,7 @@ export function useMarketingBalance(
             return;
         }
 
-        const crLid = crAccount.loginid;
+        const crLid = activeMarketingCRLoginid;
         crLidRef.current = crLid;
         setMarketingCRLoginid(crLid);
 
@@ -95,8 +110,8 @@ export function useMarketingBalance(
         // Match by the configured demoLoginid (exact ID, not prefix-based).
         const configuredDemoLid = getMarketingDemoLoginid(crLid);
         const demoAccount = configuredDemoLid
-            ? accountList.find(a => a.loginid === configuredDemoLid)
-            : accountList.find(a => isDemoAccount(a.loginid));
+            ? accounts.find(a => a.loginid === configuredDemoLid)
+            : accounts.find(a => isDemoAccount(a.loginid));
         const demoLid = demoAccount?.loginid ?? configuredDemoLid ?? null;
         demoLidRef.current = demoLid;
         setMarketingDemoLoginid(demoLid);
@@ -112,7 +127,7 @@ export function useMarketingBalance(
         // Initialise (or restore from localStorage) the display balance.
         const bal = initMarketingBalance(crLid, safeDeriv);
         setMarketingBalance(bal);
-    }, [accountList]);
+    }, [accountList, activeLoginid]);
 
     // ── 2. Subscribe to live demo balance updates from Deriv WebSocket ────────
 

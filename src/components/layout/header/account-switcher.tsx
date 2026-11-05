@@ -22,7 +22,8 @@ const AccountSwitcher = observer(({ activeAccount }: TAccountSwitcher) => {
 
     // ── Marketing balance ─────────────────────────────────────────────────────
     const { isMarketingActive, marketingCRLoginid, marketingDemoLoginid, marketingBalance } = useMarketingBalance(
-        accountList
+        accountList,
+        activeLoginid
     );
 
     const is_bot_running = run_panel?.is_running || api_base.is_running;
