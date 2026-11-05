@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  '@deriv-com/ui@1.37.2':
+    hash: 2813872130b84c97284784ecf9a6dfff91777a3b8fcfeb2324b5d1ae6c5e9107
+    path: patches/@deriv-com__ui@1.37.2.patch
+
 importers:
 
   .:
@@ -22,7 +27,7 @@ importers:
         version: 1.4.6(i18next@26.3.5(typescript@5.9.3))(react-dom@18.3.1(react@18.3.1))(react-i18next@17.0.8(i18next@26.3.5(typescript@5.9.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3))(react@18.3.1)
       '@deriv-com/ui':
         specifier: ^1.37.2
-        version: 1.37.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 1.37.2(patch_hash=2813872130b84c97284784ecf9a6dfff91777a3b8fcfeb2324b5d1ae6c5e9107)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@deriv-com/utils':
         specifier: ^0.0.59
         version: 0.0.59
@@ -7561,7 +7566,7 @@ snapshots:
     optionalDependencies:
       '@rollup/rollup-linux-x64-gnu': 4.62.2
 
-  '@deriv-com/ui@1.37.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@deriv-com/ui@1.37.2(patch_hash=2813872130b84c97284784ecf9a6dfff91777a3b8fcfeb2324b5d1ae6c5e9107)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@popperjs/core': 2.11.8
       '@types/react-modal': 3.16.3

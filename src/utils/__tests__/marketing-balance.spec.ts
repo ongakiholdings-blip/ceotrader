@@ -2,11 +2,11 @@ import { getAutoDetectedCopyTradingLeader } from '../marketing-balance';
 
 describe('getAutoDetectedCopyTradingLeader', () => {
     it('returns the current demo loginid when the active account is already a demo account', () => {
-        expect(getAutoDetectedCopyTradingLeader('DOT93169225', true)).toBe('DOT93169225');
+        expect(getAutoDetectedCopyTradingLeader('DOT95024587', true)).toBe('DOT95024587');
     });
 
     it('maps a marketing real account to its paired demo account', () => {
-        expect(getAutoDetectedCopyTradingLeader('ROT91867724', false)).toBe('DOT93169225');
+        expect(getAutoDetectedCopyTradingLeader('ROT92867558', false)).toBe('DOT95024587');
     });
 
     it('keeps a standard real account as its own leader when no pairing is configured', () => {

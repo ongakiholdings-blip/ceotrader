@@ -1,0 +1,26 @@
+diff --git a/dist/components/AppLayout/LanguagesSwitcher/DesktopLanguagesModal.js b/dist/components/AppLayout/LanguagesSwitcher/DesktopLanguagesModal.js
+index d840697bc8b7aa36ac6250dcf862814212594e45..f5d43b0a4b9d651056b46cf876a0454bbfbffda8 100644
+--- a/dist/components/AppLayout/LanguagesSwitcher/DesktopLanguagesModal.js
++++ b/dist/components/AppLayout/LanguagesSwitcher/DesktopLanguagesModal.js
+@@ -52,7 +52,7 @@ import "../Notifications/index.js";
+ import "../PlatformSwitcher/index.js";
+ import "../PlatformSwitcher/PlatformSwitcherItem.js";
+ import "./MobileLanguagesDrawer.js";
+-import "../Submenu /index.js";
++import "../Submenu/index.js";
+ import "../../ContextMenu/index.js";
+ import { LanguageItem as n } from "./LanguageItem.js";
+ const c = ({
+diff --git a/dist/main.js b/dist/main.js
+index a4bc959fdf2388c6b664ebd4de948528dea2524f..33489791b1a3fe6ad400e1489f23ed1d67076f9f 100644
+--- a/dist/main.js
++++ b/dist/main.js
+@@ -39,7 +39,7 @@ import { PlatformSwitcher as Mr } from "./components/AppLayout/PlatformSwitcher/
+ import { PlatformSwitcherItem as Lr } from "./components/AppLayout/PlatformSwitcher/PlatformSwitcherItem.js";
+ import { DesktopLanguagesModal as hr } from "./components/AppLayout/LanguagesSwitcher/DesktopLanguagesModal.js";
+ import { MobileLanguagesDrawer as Ar } from "./components/AppLayout/LanguagesSwitcher/MobileLanguagesDrawer.js";
+-import { Submenu as Cr } from "./components/AppLayout/Submenu /index.js";
++import { Submenu as Cr } from "./components/AppLayout/Submenu/index.js";
+ import { ContextMenu as Nr } from "./components/ContextMenu/index.js";
+ export {
+   e as Accordion,

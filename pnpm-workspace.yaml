@@ -1,3 +1,5 @@
 allowBuilds:
   '@parcel/watcher': true
   core-js: true
+patchedDependencies:
+  '@deriv-com/ui@1.37.2': patches/@deriv-com__ui@1.37.2.patch
